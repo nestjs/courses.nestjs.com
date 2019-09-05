@@ -1,0 +1,350 @@
+html {
+  position: relative;
+  min-height: 450px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17.5px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  background: url('img/cat.png') left bottom no-repeat;
+  background-color: #000;
+  background-size: auto;
+  color: #fff;
+}
+
+* {
+  outline: 0 !important;
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+
+a:focus,
+a:active {
+  color: #fff;
+}
+
+.logo-wrapper svg,
+.logo-wrapper img {
+  max-width: 70px;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.m-l-10 {
+  margin-left: 10px;
+}
+
+.m-r-10 {
+  margin-right: 10px;
+}
+
+.m-l-30 {
+  margin-left: 30px !important;
+}
+
+.btn {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  padding: 14px 28px;
+  min-width: 230px;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: all 100ms ease-in;
+  -moz-transition: all 100ms ease-in;
+  -webkit-transition: all 100ms ease-in;
+}
+
+.btn-primary {
+  background: #ea2845;
+  border: 2px solid #ea2845;
+  color: #fff;
+}
+.btn-primary:hover {
+  border: 2px solid #040402;
+  background: #040402;
+  color: #fff;
+}
+
+.btn-secondary {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  border: 2px solid #e92845;
+  background: transparent;
+  color: #e92845;
+}
+
+.btn img {
+  margin-right: 5px;
+}
+
+.btn span {
+  vertical-align: middle;
+}
+
+.card-wrapper ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  columns: 2;
+  -moz-column-fill: balance;
+  column-fill: balance;
+}
+
+.card-wrapper li {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+.card-wrapper ul span {
+  background: #d4e6d4;
+  color: #1dd81c;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  position: relative;
+  font-size: 12px;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+.card-wrapper span svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.pricing-wrapper {
+  padding: 20px 0;
+}
+
+.pricing-wrapper .discount,
+.pricing-wrapper .price {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.pricing-wrapper .discount {
+  color: #ea2845;
+  margin-right: 10px;
+}
+
+.pricing-wrapper .price {
+  color: #2b2b2b;
+}
+
+.btn-black {
+  color: #fff;
+  background: #090909;
+  border: 2px solid #090909;
+}
+
+.btn-black span {
+  color: #969696;
+  margin: 0 3px;
+  transition: all 100ms ease-in;
+  -moz-transition: all 100ms ease-in;
+  -webkit-transition: all 100ms ease-in;
+}
+
+.btn-black:hover {
+  background: #ea2845;
+  border: 2px solid #ea2845;
+  color: #fff;
+}
+
+.btn-black:hover span {
+  color: #fff;
+}
+
+.logo {
+  width: 65px;
+}
+
+.content-panel {
+  padding: 50px 30px;
+}
+
+.description-wrapper {
+  padding-top: 70px;
+}
+
+.content-panel h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 60px;
+}
+
+.content-panel p {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 26px;
+}
+
+.content-panel p strong {
+  color: #e0234e;
+}
+
+.card-wrapper {
+  background: #ececec;
+  color: #2b2b2b;
+  padding: 100px 90px 50px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.card-wrapper .label-bg {
+  font-size: 120px;
+  font-weight: 900;
+  position: absolute;
+  right: 100px;
+  top: 0;
+  color: rgba(43, 43, 43, 0.03);
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.cards-panel {
+  padding: 25px 0;
+}
+
+.card-title {
+  font-size: 23px;
+  font-weight: 900;
+  margin: 0;
+}
+
+.card p {
+  color: #adadad;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 28px;
+  margin: 2px 0 15px;
+}
+
+.card .input-wrapper {
+  margin: 40px 0 20px;
+}
+
+.form-control {
+  display: block;
+  padding: 12px 20px;
+  width: 100%;
+  border: 2px solid #dddddd;
+  font-size: 14px;
+  color: #111;
+  width: 100%;
+  font-weight: 500;
+}
+
+.box-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 30%;
+  background: #e0234e;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 100%;
+    width: 1680px;
+  }
+}
+
+@media (max-width: 1200px) {
+  body {
+    background: #000;
+  }
+  .bg-mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('img/cat.png') left top no-repeat;
+    background-color: #000;
+    background-size: contain;
+    opacity: 0.3;
+  }
+  .logo-wrapper {
+    text-align: center;
+  }
+  .description-wrapper {
+    padding-top: 30px;
+  }
+  .box-overlay {
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    top: auto;
+    height: 200px;
+  }
+}
+
+@media (max-width: 1020px) {
+}
+
+@media (max-width: 991px) {
+  .description-wrapper {
+    text-align: center;
+  }
+  .description-wrapper p {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 680px) {
+  .card-wrapper {
+    padding: 60px 40px 50px;
+  }
+
+  .card-wrapper ul {
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    columns: 1;
+  }
+
+  .content-panel h1 {
+    font-size: 42px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 640px) {
+  .content-panel {
+    padding: 50px 10px;
+  }
+
+  .content-panel h1 {
+    font-size: 38px;
+    line-height: 48px;
+  }
+}
