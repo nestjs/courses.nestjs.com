@@ -1,7 +1,7 @@
 {
-  "name": "nestjs.com",
+  "name": "courses.nestjs.com",
   "version": "1.0.0",
-  "description": "NestJS - official website",
+  "description": "Courses | NestJS - official website",
   "scripts": {
     "build": "rm -rf dist && parcel build index.html --public-url ./ && npm run copy-assets",
     "copy-assets": "copyfiles img/* dist",
