@@ -230,6 +230,8 @@ a:active {
 
 .cards-panel {
   padding: 25px 0;
+  position: relative;
+  z-index: 2;
 }
 
 .card-title {
@@ -305,6 +307,7 @@ a:active {
     width: 100%;
     top: auto;
     height: 200px;
+    z-index: 1;
   }
 }
 
@@ -344,7 +347,7 @@ a:active {
   }
 
   .content-panel h1 {
-    font-size: 38px;
+    font-size: 34px;
     line-height: 48px;
   }
 }
