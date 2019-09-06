@@ -74,10 +74,17 @@ a:active {
   border: 2px solid #ea2845;
   color: #fff;
 }
+
 .btn-primary:hover {
   border: 2px solid #040402;
   background: #040402;
   color: #fff;
+}
+
+.btn-disabled {
+  background: #b5b5b5;
+  border-color: #b5b5b5;
+  pointer-events: none;
 }
 
 .btn-secondary {
@@ -211,7 +218,7 @@ a:active {
 .card-wrapper {
   background: #ececec;
   color: #2b2b2b;
-  padding: 100px 90px 80px;
+  padding: 100px 90px 70px;
   position: relative;
   overflow: hidden;
   margin-bottom: 20px;
