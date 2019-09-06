@@ -9,6 +9,7 @@ window.addEventListener('load', function() {
       // styles
       newsletterAddButton.setAttribute('disabled', 'disabled');
       newsletterAddButton.classList.add('btn-disabled');
+      newsletterEmailInput.setAttribute('disabled', 'disabled');
 
       const value = newsletterEmailInput.value;
       const xhr = new XMLHttpRequest();
