@@ -211,7 +211,7 @@ a:active {
 .card-wrapper {
   background: #ececec;
   color: #2b2b2b;
-  padding: 100px 90px 50px;
+  padding: 100px 90px 80px;
   position: relative;
   overflow: hidden;
   margin-bottom: 20px;
@@ -321,6 +321,9 @@ a:active {
   .description-wrapper p {
     font-size: 16px;
     line-height: 30px;
+  }
+  .card-wrapper {
+    padding: 100px 90px 50px;
   }
 }
 
