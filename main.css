@@ -106,6 +106,10 @@ a:active {
   vertical-align: middle;
 }
 
+.card-wrapper:last-of-type {
+  margin-bottom: 0;
+}
+
 .card-wrapper ul {
   list-style: none;
   padding: 0;
