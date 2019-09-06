@@ -9,6 +9,7 @@ body {
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   background: url('img/cat.jpg') left bottom no-repeat;
+  background-position: left calc(100% + 120px);
   background-color: #000;
   background-size: auto;
   color: #fff;
@@ -55,12 +56,13 @@ a:active {
 }
 
 .btn {
+  border: 0;
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
   color: #fff;
   text-align: center;
-  padding: 14px 28px;
+  padding: 16px 30px;
   min-width: 230px;
   text-transform: uppercase;
   font-weight: 700;
@@ -71,14 +73,22 @@ a:active {
 
 .btn-primary {
   background: #ea2845;
-  border: 2px solid #ea2845;
   color: #fff;
+  position: relative;
 }
 
 .btn-primary:hover {
-  border: 2px solid #040402;
   background: #040402;
   color: #fff;
+}
+
+.btn-primary .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .btn-disabled {
@@ -88,14 +98,18 @@ a:active {
 }
 
 .btn-secondary {
-  border: 2px solid #fff;
   color: #fff;
 }
 
 .btn-secondary:hover {
-  border: 2px solid #e92845;
   background: transparent;
   color: #e92845;
+}
+
+.btn-success {
+  background: #d3e6d4;
+  color: #1dd81c;
+  pointer-events: none;
 }
 
 .btn img {
@@ -104,6 +118,22 @@ a:active {
 
 .btn span {
   vertical-align: middle;
+}
+
+.social-wrapper {
+  float: right;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.social-wrapper a {
+  color: #fff;
+  margin-left: 15px;
+  transition: all 100ms linear;
+}
+
+.social-wrapper a:hover {
+  color: #ea2845;
 }
 
 .card-wrapper:last-of-type {
@@ -157,9 +187,29 @@ a:active {
   font-weight: 900;
 }
 
+.original-price {
+  font-weight: 700;
+  margin-right: 10px;
+  color: grey;
+  position: relative;
+  position: relative;
+  display: inline-block;
+}
+
+.original-price::after {
+  display: block;
+  height: 2px;
+  position: absolute;
+  left: -2px;
+  right: -2px;
+  content: '';
+  background: #808080;
+  top: 50%;
+}
+
 .pricing-wrapper .discount {
   color: #ea2845;
-  margin-right: 10px;
+  margin-right: 8px;
 }
 
 .pricing-wrapper .price {
@@ -259,6 +309,10 @@ a:active {
   margin: 2px 0 15px;
 }
 
+.card button {
+  width: 100%;
+}
+
 .card .input-wrapper {
   margin: 40px 0 20px;
 }
@@ -281,6 +335,18 @@ a:active {
   right: 0;
   width: 30%;
   background: #e0234e;
+}
+
+@media (min-width: 1600px) {
+  body {
+    background-position: left bottom;
+  }
+}
+
+@media (min-height: 1000px) {
+  .cards-panel {
+    margin-top: 3%;
+  }
 }
 
 @media (min-width: 1200px) {

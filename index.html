@@ -72,13 +72,29 @@
       <div class="row">
         <div class="col-lg-6">
           <section class="content-panel">
-            <div class="logo-wrapper">
+            <div class="logo-wrapper d-inline-block">
               <a href="http://nestjs.com">
                 <img
                   src="img/logo-small.svg"
                   alt="NestJS - A progressive Node.js web framework"
                   class="logo"
                 />
+              </a>
+            </div>
+            <div class="social-wrapper">
+              <a
+                href="https://github.com/nestjs/nest"
+                target="_blank"
+                class="icon"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://twitter.com/nestframework"
+                target="_blank"
+                class="icon"
+              >
+                <i class="fab fa-twitter"></i>
               </a>
             </div>
             <div class="description-wrapper">
@@ -126,11 +142,12 @@
                 </ul>
                 <div class="pricing-wrapper">
                   <span class="discount">-50%</span>
-                  <span class="price">$249,99</span>
+                  <span class="original-price">$119,99</span>
+                  <span class="price">$59,99</span>
                 </div>
                 <div class="button-wrapper">
                   <a href="#" class="d-block btn btn-primary btn-disabled"
-                    >PRE-ORDER NOW</a
+                    >PRE-ORDER NOW <span class="icon"><i class="fas fa-shopping-cart"></span></i></a
                   >
                 </div>
               </div>
@@ -146,16 +163,23 @@
                 <p>
                   Sign up to the newsletter and dolor sit amet
                 </p>
-                <div class="input-wrapper">
-                  <input
-                    type="email"
-                    class="form-control"
-                    placeholder="Write your email.."
-                  />
-                </div>
-                <div class="button-wrapper">
-                  <a href="#" class="d-block btn btn-primary">SIGN ME UP</a>
-                </div>
+                <form class="form-wrapper">
+                  <div class="input-wrapper">
+                    <input
+                      name="email"
+                      type="email"
+                      class="form-control"
+                      placeholder="Write your email.."
+                      id="newsletter-email"
+                      required
+                    />
+                  </div>
+                  <div class="button-wrapper">
+                    <button type="submit" class="newsletter-add d-block btn btn-primary"
+                      >SIGN ME UP <span class="icon"><i class="fas fa-paper-plane"></i></span></a
+                    >
+                  </div>
+                </form>
               </div>
             </div>
           </section>
