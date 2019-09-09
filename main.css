@@ -181,7 +181,6 @@ a:active {
   padding: 20px 0;
 }
 
-.pricing-wrapper .discount,
 .pricing-wrapper .price {
   font-size: 30px;
   font-weight: 900;
@@ -207,7 +206,7 @@ a:active {
   top: 50%;
 }
 
-.pricing-wrapper .discount {
+.card-title .discount {
   color: #ea2845;
   margin-right: 8px;
 }
@@ -302,11 +301,15 @@ a:active {
 }
 
 .card p {
-  color: #adadad;
+  color: #808080;
   font-size: 15px;
   font-weight: 500;
   line-height: 28px;
   margin: 2px 0 15px;
+}
+
+.card p strong {
+  color: #e0224e;
 }
 
 .card button {
@@ -321,7 +324,7 @@ a:active {
   display: block;
   padding: 12px 20px;
   width: 100%;
-  border: 2px solid #dddddd;
+  border: 2px solid #e2e2e2;
   font-size: 14px;
   color: #111;
   width: 100%;
@@ -419,6 +422,10 @@ a:active {
     font-size: 42px;
     line-height: 50px;
   }
+
+  .btn-preorder {
+    padding-right: 50px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -429,5 +436,15 @@ a:active {
   .content-panel h1 {
     font-size: 34px;
     line-height: 48px;
+  }
+
+  .btn {
+    text-align: left;
+  }
+}
+
+@media (max-width: 360px) {
+  .card-wrapper {
+    padding: 50px 30px 40px;
   }
 }
