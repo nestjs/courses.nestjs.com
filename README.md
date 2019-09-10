@@ -26,7 +26,7 @@
 
 ## Description
 
-Repository contains [enterprise.nestjs.com](https://enterprise.nestjs.com) source code, the official Nest website subpage.
+Repository contains [courses.nestjs.com](https://courses.nestjs.com) source code, the official Nest website subpage.
 
 ## Developing
 
