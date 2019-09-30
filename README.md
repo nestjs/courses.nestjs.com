@@ -24,7 +24,7 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-# Official NestJS Courses (website)
+## Official NestJS Courses (website)
 
 Whether you are a Node.js veteran, front-end developer, or even new to development. **Learn everything about NestJS** from the basic principles, best-practices, tips & tricks, to advanced patterns, getting you ready to build NestJS / Node.js applications at any scale.
 
