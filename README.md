@@ -24,7 +24,11 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+## Official NestJS Courses (website)
+
+Whether you are a Node.js veteran, front-end developer, or even new to development. **Learn everything about NestJS** from the basic principles, best-practices, tips & tricks, to advanced patterns, getting you ready to build NestJS / Node.js applications at any scale.
+
+**Prepare for an in-depth guided course & walkthrough** of all the fundamentals of a NestJS application from the Creator [Kamil Mysliwiec](https://twitter.com/kammysliwiec) himself, and [Mark Pieszak](https://twitter.com/MarkPieszak) (Core Team Member).
 
 Repository contains [courses.nestjs.com](https://courses.nestjs.com) source code, the official Nest website subpage.
 
@@ -47,7 +51,7 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 ## Stay in touch
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
+- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
 - Website - [https://nestjs.com](https://nestjs.com/)
 - Twitter - [@nestframework](https://twitter.com/nestframework)
 
