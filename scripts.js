@@ -64,13 +64,13 @@ window.addEventListener("load", function () {
     });
   }
 
-  document
-    .querySelector(".category-heading")
-    .addEventListener("click", function (el) {
+  document.querySelectorAll(".category-heading").forEach(function (headingRef) {
+    headingRef.addEventListener("click", function (el) {
       if (this.parentElement.classList.contains("opened")) {
         this.parentElement.classList.remove("opened");
       } else {
         this.parentElement.classList.add("opened");
       }
     });
+  });
 });
