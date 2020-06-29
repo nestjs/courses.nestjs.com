@@ -215,6 +215,10 @@ a:active {
   color: #111;
 }
 
+.course-info-wrapper p.release-date strong {
+  font-weight: 600;
+}
+
 .course-info-wrapper ul {
   display: block;
   list-style: none;
