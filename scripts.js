@@ -73,4 +73,52 @@ window.addEventListener("load", function () {
       }
     });
   });
+
+  const videoModalContainerRef = document.querySelector(
+    ".video-modal-container"
+  );
+  const videoModalRef = document.querySelector(".video-modal");
+
+  document.querySelectorAll(".btn-watch").forEach(function (buttonRef) {
+    buttonRef.addEventListener("click", function (btnClickEvent) {
+      const videoId = btnClickEvent.target.getAttribute("data-video-id");
+      if (!videoId) {
+        return;
+      }
+      const vimeoIframe = getVimeoIframe(videoId);
+
+      videoModalContainerRef.classList.add("opened");
+      videoModalRef.innerHTML = vimeoIframe;
+
+      const handler = function (event) {
+        if (btnClickEvent === event) {
+          return;
+        }
+
+        const isClickInside = videoModalRef.contains(event.target);
+        if (
+          !isClickInside &&
+          videoModalContainerRef.classList.contains("opened")
+        ) {
+          videoModalContainerRef.classList.remove("opened");
+          videoModalRef.textContent = "";
+
+          document.removeEventListener("click", handler);
+        }
+      };
+      document.addEventListener("click", handler);
+    });
+  });
 });
+
+function getVimeoIframe(videoId) {
+  return `<iframe
+  src="https://player.vimeo.com/video/${videoId}?title=0&byline=0&portrait=0&sidedock=0"
+  width="1170"
+  height="675"
+  frameborder="0"
+  class="featured-lesson"
+  allow="autoplay; fullscreen"
+  allowfullscreen
+></iframe>`;
+}

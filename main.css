@@ -578,6 +578,52 @@ a:active {
   transform: rotate(-30deg);
 }
 
+.btn-watch {
+  background: #e0244e;
+  border: 0;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 3px;
+  padding: 1px 8px;
+  line-height: 21px;
+  float: right;
+  margin: 4px 15px 0 0;
+  cursor: pointer;
+}
+
+.btn-watch svg {
+  margin-right: 5px;
+  font-size: 9px;
+}
+
+.video-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1170px;
+  min-height: 675px;
+  max-width: 95%;
+  height: 100%;
+}
+
+.video-modal-container {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100009;
+  display: none;
+}
+
+.video-modal-container.opened {
+  display: block;
+}
+
 .companies-tiles {
   max-width: 800px;
   margin: 70px auto;
@@ -802,7 +848,7 @@ a:active {
   display: block;
 }
 
-.curriculum-block.opened svg {
+.curriculum-block.opened svg:not(.fa-play) {
   transform: rotate(180deg);
 }
 
