@@ -1199,6 +1199,11 @@ a:active {
   .curriculum-block .category-heading span {
     display: block;
   }
+  .btn-watch {
+    display: inline-block;
+    margin: 0px 0 0 10px;
+    float: none;
+  }
 }
 
 @media (max-width: 420px) {

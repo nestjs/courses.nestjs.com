@@ -94,8 +94,9 @@ window.addEventListener("load", function () {
         if (btnClickEvent === event) {
           return;
         }
+        const vimeoIframeRef = document.querySelector(".video-modal iframe");
 
-        const isClickInside = videoModalRef.contains(event.target);
+        const isClickInside = vimeoIframeRef.contains(event.target);
         if (
           !isClickInside &&
           videoModalContainerRef.classList.contains("opened")
