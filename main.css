@@ -678,7 +678,7 @@ a:active {
 }
 
 .teachers-wrapper {
-  margin: 2.5em 0;
+  margin: 2.1em 0;
 }
 
 .teacher-meta {
@@ -867,7 +867,6 @@ a:active {
 
 .curriculum-block.opened .category-items {
   display: block;
-  padding: 10px 0;
 }
 
 .curriculum-block.opened {
@@ -912,6 +911,11 @@ a:active {
   border-top-right-radius: 10px;
 }
 
+.curriculum-block.opened-below {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
 .curriculum-block.opened .category-heading svg {
   color: #fff;
 }
@@ -947,7 +951,19 @@ a:active {
 }
 
 .curriculum-block .video-item {
-  padding: 5px 20px;
+  padding: 8px 20px;
+}
+
+.curriculum-block .video-item:first-of-type {
+  padding-top: 12px;
+}
+
+.curriculum-block .video-item:last-of-type {
+  padding-bottom: 12px;
+}
+
+.video-item:nth-of-type(even) {
+  background: #efefef52;
 }
 
 .curriculum-block .category-items h6 {
