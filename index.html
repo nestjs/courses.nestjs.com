@@ -267,7 +267,6 @@
         <div class="row">
           <div class="col-md-5 col-md-push-7">
             <div class="checkout-wrapper">
-              <span class="video-title">Use Route Parameters</span>
               <iframe
                 src="https://player.vimeo.com/video/433943559?title=0&byline=0&portrait=0&sidedock=0&controls=0"
                 width="380"
@@ -300,6 +299,9 @@
                 <span class="discount">-50%</span>
                 <span class="current-price">$59.99</span>
                 <span class="original-price">$119.99</span>
+                <span class="vat"
+                  >+VAT for EU <img src="/img/eu-flag.svg" width="19"
+                /></span>
               </h5>
               <a
                 href="https://learn.nestjs.com/purchase?product_id=2087357"
@@ -308,12 +310,10 @@
                 <!--Purchase-->Pre-order Now
                 <span class="icon"><i class="fas fa-shopping-cart"></i></span>
               </a>
-              <span class="eu-note">EU customers: price excludes VAT</span>
-              <div class="supported-payments">
-                <img height="20" src="img/mastercard.svg" />
-                <img height="20" src="img/visa.svg" />
-                <img height="20" src="img/amex.svg" />
-              </div>
+              <span class="discount-note"
+                >Got a <strong>discount code</strong>? Add it in the next
+                step.</span
+              >
             </div>
           </div>
           <div class="col-md-7 col-md-pull-5 course-info">
@@ -377,7 +377,9 @@
                     <span>1:27</span>
                   </div>
                   <div class="video-item">
-                    <h6>3. Generating our first NestJS Application</h6>
+                    <h6 class="preview-video-title">
+                      3. Generating our first NestJS Application
+                    </h6>
                     <span>1:32</span>
                     <button class="btn-watch" data-video-id="433942660">
                       <i class="fas fa-play"></i> Watch
@@ -415,7 +417,7 @@
                     <span>4:52</span>
                   </div>
                   <div class="video-item">
-                    <h6>
+                    <h6 class="preview-video-title">
                       4. Use Route Parameters
                     </h6>
                     <span>2:05</span>
@@ -586,7 +588,7 @@
                 </div>
                 <div class="category-items">
                   <div class="video-item">
-                    <h6>
+                    <h6 class="preview-video-title">
                       1. Understand Dependency Injection
                     </h6>
                     <span>4:01</span>
