@@ -26,8 +26,7 @@ window.addEventListener("load", function () {
 
   function toggleCheckoutPosition() {
     if (window.innerHeight < checkoutWrapper.clientHeight + 100) {
-      checkoutWrapper.style.marginLeft = "0px";
-      checkoutWrapper.style.position = "static";
+      resetCheckoutWrapperPosition();
       return;
     }
     if (window.innerWidth > 991) {
@@ -45,17 +44,25 @@ window.addEventListener("load", function () {
         checkoutWrapper.style.marginLeft = "18px";
         return;
       } else if (window.scrollY >= maxScrollPos) {
+        var padding = 200;
         checkoutWrapper.style.position = "absolute";
         checkoutWrapper.style.marginLeft = "18px";
-        checkoutWrapper.style.top = courseInfoWrapper.offsetTop + 117 + "px";
+        checkoutWrapper.style.top =
+          courseInfoWrapper.offsetHeight -
+          checkoutWrapper.offsetHeight -
+          padding +
+          "px";
         return;
       }
-      checkoutWrapper.style.marginLeft = "0px";
-      checkoutWrapper.style.position = "static";
+      resetCheckoutWrapperPosition();
     } else {
-      checkoutWrapper.style.marginLeft = "0px";
-      checkoutWrapper.style.position = "static";
+      resetCheckoutWrapperPosition();
     }
+  }
+
+  function resetCheckoutWrapperPosition() {
+    checkoutWrapper.style.marginLeft = "0px";
+    checkoutWrapper.style.position = "static";
   }
 
   registerNavigation();
@@ -115,6 +122,7 @@ window.addEventListener("load", function () {
             "opened-below"
           );
         }
+        toggleCheckoutPosition();
       } else {
         this.parentElement.classList.add("opened");
         if (this.parentNode && this.parentNode.previousElementSibling) {
