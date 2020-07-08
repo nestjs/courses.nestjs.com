@@ -5,6 +5,7 @@ window.addEventListener("load", function () {
   var checkoutWrapper = document.querySelector(".checkout-wrapper");
   var offset = 300;
 
+  checkLocation();
   toggleStickyNavbar();
 
   window.addEventListener("scroll", function () {
@@ -169,6 +170,60 @@ window.addEventListener("load", function () {
     });
   });
 });
+
+function checkLocation() {
+  const request = new XMLHttpRequest();
+  const url = "http://ip-api.com/json?fields=16386";
+  request.onreadystatechange = (e) => {
+    if (request.readyState !== 4) {
+      return;
+    }
+    try {
+      const { status, countryCode } = JSON.parse(request.responseText);
+      if (status !== "success") {
+        return;
+      }
+
+      const isParityDiscount = [
+        "IN",
+        "BR",
+        "PK",
+        "TH",
+        "ID",
+        "PH",
+        "NG",
+      ].includes(countryCode);
+      if (isParityDiscount) {
+        showParityDiscountBar(countryCode);
+      } else {
+        showPreorderBar();
+      }
+    } catch {
+      showPreorderBar();
+    }
+  };
+  request.onerror = showPreorderBar;
+  request.open("GET", url);
+  request.send();
+
+  function showPreorderBar() {
+    document
+      .querySelector(".preorder-discount-wrapper")
+      .classList.add("visible");
+
+    const timeleftDate = new Date(new Date(2020, 7, 29).getTime() - Date.now());
+    document.querySelector(".preorder-discount-wrapper .timeleft").textContent =
+      "ONLY " + (timeleftDate.getUTCDate() - 1) + " days left!";
+  }
+
+  function showParityDiscountBar(countryCode) {
+    document.querySelector(".parity-discount-wrapper").classList.add("visible");
+
+    document
+      .querySelector(".parity-discount-wrapper img")
+      .setAttribute("src", "/img/flags/" + countryCode + ".svg");
+  }
+}
 
 function getVimeoIframe(videoId) {
   return `<iframe

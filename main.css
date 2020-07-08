@@ -773,11 +773,9 @@ a:active {
   font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
-  white-space: nowrap;
   color: #fff;
   padding: 4px 6px;
   border-radius: 4px;
-  box-shadow: inset 0 -2px 0 #ea2945;
   vertical-align: middle;
 }
 
@@ -1116,6 +1114,60 @@ a:active {
   left: 50%;
   transform: translateX(-50%);
   bottom: 0;
+}
+
+.parity-discount-wrapper,
+.preorder-discount-wrapper {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+  background: #0a0a0a;
+  transition: all 200ms ease-in;
+  display: none;
+}
+
+.parity-discount-wrapper.visible,
+.preorder-discount-wrapper.visible {
+  display: block;
+}
+
+.parity-discount-wrapper span,
+.preorder-discount-wrapper span {
+  background: #ea2945;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 3px 5px;
+  border-radius: 3px;
+  vertical-align: baseline;
+  margin: 0 4px;
+}
+
+.parity-discount-wrapper p,
+.preorder-discount-wrapper p {
+  margin: 0;
+  padding: 20px 0;
+  line-height: 25px;
+}
+
+.parity-discount-wrapper img {
+  margin: 0 2px;
+}
+
+.parity-discount-wrapper a,
+.preorder-discount-wrapper a {
+  color: #ea2945;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-left: 3px;
+}
+
+.parity-discount-wrapper a:hover,
+.preorder-discount-wrapper a:hover {
+  color: #fff;
 }
 
 @media (max-width: 1020px) {
