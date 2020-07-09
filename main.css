@@ -1170,6 +1170,67 @@ a:active {
   color: #fff;
 }
 
+.discount-tooltip {
+  display: none;
+}
+
+.discount-tooltip.visible {
+  display: block;
+}
+
+.tooltip {
+  position: relative;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  background: #0c0c0c;
+  border-radius: 4px;
+  width: 80%;
+  margin: 0 auto 25px;
+}
+
+.tooltip:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #0c0c0c;
+  left: 50%;
+  top: -7px;
+  transform: translateX(-50%);
+}
+
+.course-info-wrapper .tooltip p {
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 26px;
+  margin: 0;
+}
+
+.course-info-wrapper .tooltip a {
+  color: #27ccb3;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.course-info-wrapper .tooltip span {
+  background: #27ccb3;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 3px 4px;
+  border-radius: 4px;
+  vertical-align: middle;
+}
+
+.course-info-wrapper .tooltip a:hover {
+  color: #fff;
+}
+
 @media (max-width: 1020px) {
   .newsletter-wrapper hgroup,
   .newsletter-form {
