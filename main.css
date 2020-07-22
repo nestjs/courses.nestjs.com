@@ -259,20 +259,74 @@ a:active {
 }
 
 .highlights-wrapper .heading h4,
-.discover-wrapper .heading h4 {
+.discover-wrapper .heading h4,
+.faq-wrapper .heading h4 {
   font-size: 36px;
   margin: 0;
   line-height: 60px;
 }
 
 .highlights-wrapper .heading p,
-.discover-wrapper .heading p {
+.discover-wrapper .heading p,
+.faq-wrapper .heading p {
   font-weight: 500;
   max-width: 700px;
   margin: 15px auto 50px;
   color: #000;
   font-size: 16px;
   line-height: 30px;
+}
+
+.faq-wrapper {
+  background: #e4e4e4;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.faq-questions-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.faq-question-wrapper {
+  flex: 50%;
+  max-width: 50%;
+  padding: 15px;
+}
+
+.faq-question-wrapper--wide {
+  flex: 100%;
+  max-width: 100%;
+}
+
+.faq-question {
+  background: #fbfbfb;
+  padding: 40px 30px;
+  border-radius: 5px;
+  height: 100%;
+}
+
+.faq-question h5 {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0 0 15px;
+}
+
+.faq-question p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #636363;
+}
+
+.faq-question p strong {
+  color: #0c0c0c;
+}
+
+.faq-question a {
+  color: #e0244e;
+  font-weight: 600;
 }
 
 .discover-wrapper .heading a {
@@ -1340,6 +1394,10 @@ a:active {
   }
   .newsletter-wrapper .envelope-bg {
     font-size: 280px;
+  }
+  .faq-question-wrapper {
+    flex: 100%;
+    max-width: 100%;
   }
 }
 
