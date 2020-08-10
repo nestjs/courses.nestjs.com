@@ -943,7 +943,8 @@ a:active {
   margin-bottom: 0;
 }
 
-.curriculum-block .category-heading {
+.curriculum-block .category-heading,
+.curriculum-block .extension-heading {
   padding: 12px 20px;
 }
 
@@ -1130,6 +1131,28 @@ a:active {
   .featured-lesson {
     max-height: 200px;
   }
+}
+
+.extension-heading {
+  position: relative;
+}
+
+.extension-heading .coming-soon {
+  color: #fff;
+  font-size: 11px;
+  float: none;
+  position: static;
+  left: auto;
+  top: auto;
+  margin-right: 10px;
+  padding: 3px 5px;
+}
+
+.extension-heading .price {
+  color: #27ccb3;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 2px;
 }
 
 .coming-soon {
@@ -1435,7 +1458,8 @@ a:active {
     float: none;
     margin-right: 0;
   }
-  .curriculum-block .category-heading {
+  .curriculum-block .category-heading,
+  .curriculum-block .extension-heading {
     line-height: 24px;
   }
   .curriculum-block .category-heading span {
