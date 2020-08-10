@@ -244,11 +244,16 @@ a:active {
   margin-right: 15px;
 }
 
-.course-info span svg {
+.course-info li span svg {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
+}
+
+.lesson-icon {
+  margin-top: 7px;
+  margin-left: 5px;
 }
 
 .highlights-wrapper,
@@ -935,7 +940,7 @@ a:active {
   color: #fff;
 }
 
-.curriculum-block.opened svg:not(.fa-play) {
+.curriculum-block.opened .category-heading svg:not(.fa-play) {
   transform: rotate(180deg);
 }
 
