@@ -212,7 +212,9 @@ function checkLocation() {
       .querySelector(".preorder-discount-wrapper")
       .classList.add("visible");
 
-    const timeleftDate = new Date(new Date(2020, 9, 1).getTime() - Date.now());
+    const timeleftDate = new Date(
+      new Date(2020, 10, 29).getTime() - Date.now()
+    );
     document.querySelector(".preorder-discount-wrapper .timeleft").textContent =
       "ONLY " + (timeleftDate.getUTCDate() - 1) + " days left!";
   }
