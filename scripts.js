@@ -172,7 +172,7 @@ window.addEventListener("load", function () {
 });
 
 function checkLocation() {
-  const request = new XMLHttpRequest();
+  /*const request = new XMLHttpRequest();
   const url = "https://pro.ip-api.com/json?fields=16386&key=b7VoEVfWO5L9bxN";
   request.onreadystatechange = (e) => {
     if (request.readyState !== 4) {
@@ -206,6 +206,8 @@ function checkLocation() {
   request.onerror = showPreorderBar;
   request.open("GET", url);
   request.send();
+  */
+  showPreorderBar();
 
   function showPreorderBar() {
     document
@@ -213,7 +215,7 @@ function checkLocation() {
       .classList.add("visible");
 
     const timeleftDate = new Date(
-      new Date(2020, 10, 29).getTime() - Date.now()
+      new Date(2020, 11, 28).getTime() - Date.now()
     );
     document.querySelector(".preorder-discount-wrapper .timeleft").textContent =
       "ONLY " + (timeleftDate.getUTCDate() - 1) + " days left!";
