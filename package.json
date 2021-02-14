@@ -14,6 +14,7 @@
     "parcel-bundler": "1.12.4"
   },
   "dependencies": {
-    "copyfiles": "2.4.1"
+    "copyfiles": "2.4.1",
+    "parcel-plugin-browserconfig": "^1.0.5"
   }
 }
