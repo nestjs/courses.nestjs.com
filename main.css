@@ -792,6 +792,12 @@ a:active {
   position: relative;
 }
 
+@media (max-width: 420px) {
+  .checkout-wrapper .price {
+    font-size: 28px;
+  }
+}
+
 .checkout-wrapper .btn {
   margin: 0 auto;
   display: block;
@@ -825,6 +831,12 @@ a:active {
 .checkout-wrapper .current-price {
   margin: auto 0.5em;
   vertical-align: middle;
+}
+
+@media (max-width: 420px) {
+  .checkout-wrapper .current-price {
+    margin: auto 0.25em;
+  }
 }
 
 .checkout-wrapper .discount {
