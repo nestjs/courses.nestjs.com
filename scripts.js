@@ -115,6 +115,9 @@ window.addEventListener("load", function () {
   }
 
   document.querySelectorAll(".category-heading").forEach(function (headingRef) {
+    if (headingRef.classList.contains('category-heading--no-expand')) {
+      return;
+    }
     headingRef.addEventListener("click", function (el) {
       if (this.parentElement.classList.contains("opened")) {
         this.parentElement.classList.remove("opened");
@@ -133,6 +136,71 @@ window.addEventListener("load", function () {
     });
   });
 
+  // Extensions modal
+  document.querySelectorAll(".open-extension-trigger").forEach(function (buttonRef) {
+    buttonRef.addEventListener("click", function (btnClickEvent) {
+      const extensionKey = buttonRef.getAttribute("data-extension-key");
+      if (!extensionKey) {
+        return;
+      }
+      const extensionModalContainerRef = document.querySelector(`.extension-modal-container[data-extension-key='${extensionKey}']`);
+      if (extensionModalContainerRef) {
+        extensionModalContainerRef.classList.add("opened");
+
+        const extensionModalRef = extensionModalContainerRef.querySelector('.extension-modal');
+        const extensionModalContentRef = extensionModalContainerRef.querySelector('.extension-modal-content');
+        const checkoutWrapperRef = extensionModalContainerRef.querySelector('.checkout-wrapper');
+        const closeIconRef = extensionModalContainerRef.querySelector('.close-icon');
+
+        const isCheckoutDisplayedInline = window.innerWidth >= 1070
+        if (isCheckoutDisplayedInline) {
+          const minContentHeight = extensionModalContentRef.clientHeight;
+          extensionModalContentRef.style.height = '95vh';
+          checkoutWrapperRef.style.height = minContentHeight + 'px';
+        } else {
+          extensionModalContentRef.style.height = '95vh';
+        }
+
+        const onCloseCleanup = function() {
+          // Reset CSS
+          extensionModalContainerRef.classList.remove("opened");
+
+          if (isCheckoutDisplayedInline) {
+            extensionModalContentRef.style.height = 'auto';
+            checkoutWrapperRef.style.height = 'auto';
+          }
+
+          // Strip hash
+          if (!window.location.hash) {
+            return;
+          }
+          window.location.hash = '';
+        }
+
+        const handler = function (event) {
+          if (btnClickEvent === event) {
+            return;
+          }
+          const isClickInside = extensionModalRef.contains(event.target);
+          if (
+            !isClickInside &&
+            extensionModalContainerRef.classList.contains("opened")
+          ) {
+            onCloseCleanup();
+            document.removeEventListener("click", handler);
+          }
+        };
+        btnClickEvent.stopPropagation();
+        document.addEventListener("click", handler);
+
+        closeIconRef.addEventListener("click", function() {
+          onCloseCleanup();
+        }, { once: true });
+      }
+    });
+  });
+
+  // Video modal
   const videoModalContainerRef = document.querySelector(
     ".video-modal-container"
   );
@@ -169,6 +237,20 @@ window.addEventListener("load", function () {
       document.addEventListener("click", handler);
     });
   });
+
+  function checkIfAutoOpenModal () {
+    let hash = window.location.hash;
+    if (!hash) {
+      return;
+    }
+    hash = hash.slice(1);
+    const buttonRef = document.querySelector(`.open-extension-trigger[data-extension-key='${hash}']`);
+    console.log(buttonRef)
+    if (buttonRef) {
+      buttonRef.click();
+    }
+  }
+  checkIfAutoOpenModal();
 });
 
 function checkLocation() {

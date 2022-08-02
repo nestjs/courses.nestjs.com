@@ -244,7 +244,7 @@ a:active {
   margin-right: 15px;
 }
 
-.course-info li span svg {
+.course-info-wrapper li span svg {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -350,11 +350,13 @@ a:active {
 }
 
 .highlights-wrapper h5 {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 18px;
+  font-weight: 600;
   color: #ea2845;
-  margin: 40px 0 0;
+  margin: 0 0 10px;
+}
+
+.extension-card--bundle h5 {
+  color: #c6219b;
 }
 
 .highlights-wrapper p {
@@ -365,8 +367,16 @@ a:active {
   line-height: 30px;
 }
 
-.highlight-block {
+.highlight-block .extension-card {
   margin-top: 50px;
+}
+
+.highlight-block:not(.highlight-block--coming-soon) {
+  cursor: pointer;
+}
+
+.highlight-block:not(.highlight-block--coming-soon):hover .extension-card {
+  background-color: #fafafa;
 }
 
 .email-wrapper {
@@ -657,6 +667,106 @@ a:active {
   font-size: 9px;
 }
 
+.extension-modal-container {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100009;
+  visibility: hidden;
+  opacity: .0;
+  transition: all 200ms ease-in-out;
+}
+
+.extension-modal-container.opened {
+  visibility: visible;
+  opacity: 1.0;
+}
+
+.extension-modal-container .close-icon {
+  font-size: 28px;
+  color: grey;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  cursor: pointer;
+}
+
+.extension-modal-container .close-icon:hover {
+  color: #111;
+}
+
+.extension-modal-container .checkout-wrapper iframe {
+  margin-top: 25px;
+}
+
+.extension-modal {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 1250px;
+  max-width: 95%;
+  background: #fff;
+  margin-top: 20px;
+  padding: 0;
+  display: flex;
+  align-items: stretch;
+}
+
+.extension-modal-content {
+  overflow-y: scroll;
+  display: flex;
+  align-items: stretch;
+  max-height: 90%;
+}
+
+.extension-modal .curriculum-block {
+  background: #f9f9f9;
+}
+
+.extension-info {
+  padding: 25px 35px;
+}
+
+.extension-modal .checkout-wrapper {
+  max-width: initial;
+  height: auto;
+  float: none;
+  background: #f4f4f4;
+  min-width: 500px;
+  border-radius: 0;
+}
+
+@media (max-width: 1070px) {
+  .extension-info {
+    padding: 15px 20px;
+  }
+  .extension-modal,
+  .extension-modal-content {
+    display: block;
+  }
+  .extension-modal .checkout-wrapper {
+    min-width: 100%;
+    margin-bottom: 0;
+  }
+  .extension-modal .teachers-wrapper {
+    max-width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.extension-modal .curriculum-wrapper {
+  padding-bottom: 45px;
+}
+
+.extension-modal.course-info-wrapper h2 {
+  margin-top: 10px;
+}
+
 .video-modal {
   position: fixed;
   top: 50%;
@@ -839,7 +949,8 @@ a:active {
   }
 }
 
-.checkout-wrapper .discount {
+.checkout-wrapper .discount,
+.extra-bundle-discount {
   background: #ea2945;
   font-size: 12px;
   font-weight: 600;
@@ -848,6 +959,10 @@ a:active {
   padding: 4px 6px;
   border-radius: 4px;
   vertical-align: middle;
+}
+
+.extra-bundle-discount {
+  background: #c6219b;
 }
 
 .checkout-wrapper .discount-note {
@@ -990,7 +1105,7 @@ a:active {
   color: #fff;
 }
 
-.curriculum-block .category-heading:hover {
+.curriculum-block .category-heading:not(.category-heading--no-expand):hover {
   cursor: pointer;
 }
 
@@ -1068,6 +1183,14 @@ a:active {
   position: relative;
 }
 
+.extension-card .card-image--bundle {
+  background: #200031;
+}
+
+.second-ext-icon {
+  transform: scale(0.8) translateY(-5px);
+}
+
 .extension-card .card-body {
   margin-top: 3px;
 }
@@ -1075,6 +1198,10 @@ a:active {
 .extension-card .card-body svg {
   color: #e0244e;
   margin: 0 5px 0 10px;
+}
+
+.extension-card--bundle .card-body svg {
+  color: #c6219b;
 }
 
 .extension-card .triangle-1 {
@@ -1150,11 +1277,16 @@ a:active {
   }
 }
 
-.extension-heading {
+.extension-heading:not(.extension-heading--coming-soon) {
   position: relative;
+  cursor: pointer;
 }
 
-.extension-heading .coming-soon {
+.extension-heading:not(.extension-heading--coming-soon):hover {
+  background-color: #fafafa;
+}
+
+.extension-heading .extension-label {
   color: #fff;
   font-size: 11px;
   float: none;
@@ -1172,9 +1304,18 @@ a:active {
   margin-top: 2px;
 }
 
-.coming-soon {
+.extension-heading .original-price {
+  text-decoration: line-through;
+  margin-top: 2px;
+  font-size: 16px;
+}
+
+.extension-heading--coming-soon {
+  background: #eaeaea;
+}
+
+.extension-label {
   position: absolute;
-  background: #e0244e;
   text-transform: uppercase;
   font-weight: bold;
   color: #fff;
@@ -1183,6 +1324,14 @@ a:active {
   border-radius: 2px;
   left: 15px;
   top: 15px;
+}
+
+.extension-label--bundle {
+  background: #c6219b;
+}
+
+.extension-label--coming-soon {
+  background: #e0244e;
 }
 
 .extension-card .card-header {
