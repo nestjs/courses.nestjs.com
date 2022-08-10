@@ -730,6 +730,22 @@ a:active {
   padding: 25px 35px;
 }
 
+.extension-info blockquote {
+  margin: 25px 0 0 0;
+  background: #f7f7f7;
+  padding: 15px 20px;
+}
+
+.extension-info blockquote em {
+  font-size: 16px;
+  font-style: normal;
+  color: #3e3e3e;
+}
+
+.extension-info blockquote a {
+  font-size: 16px;
+}
+
 .extension-modal .checkout-wrapper {
   max-width: initial;
   height: auto;
@@ -950,7 +966,8 @@ a:active {
 }
 
 .checkout-wrapper .discount,
-.extra-bundle-discount {
+.extra-bundle-discount,
+.extra-pre-order-discount {
   background: #ea2945;
   font-size: 12px;
   font-weight: 600;
@@ -963,6 +980,12 @@ a:active {
 
 .extra-bundle-discount {
   background: #c6219b;
+  font-weight: 700;
+}
+
+.extra-pre-order-discount {
+  background: #27ccb3;
+  font-weight: 700;
 }
 
 .checkout-wrapper .discount-note {
@@ -1328,6 +1351,10 @@ a:active {
 
 .extension-label--bundle {
   background: #c6219b;
+}
+
+.extension-label--pre-order {
+  background: #27ccb3;
 }
 
 .extension-label--coming-soon {
