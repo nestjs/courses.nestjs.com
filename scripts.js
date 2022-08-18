@@ -136,6 +136,12 @@ window.addEventListener("load", function () {
     });
   });
 
+    // Video modal
+  const videoModalContainerRef = document.querySelector(
+    ".video-modal-container"
+  );
+  const videoModalRef = document.querySelector(".video-modal");
+
   // Extensions modal
   document.querySelectorAll(".open-extension-trigger").forEach(function (buttonRef) {
     buttonRef.addEventListener("click", function (btnClickEvent) {
@@ -193,8 +199,10 @@ window.addEventListener("load", function () {
           }
           const isClickInside = extensionModalRef.contains(event.target);
           if (
-            !isClickInside &&
-            extensionModalContainerRef.classList.contains("opened")
+            !isClickInside 
+            && extensionModalContainerRef.classList.contains("opened")
+            && videoModalContainerRef !== event.target
+            && !videoModalContainerRef.contains(event.target)
           ) {
             onCloseCleanup();
             document.removeEventListener("click", handler);
@@ -209,12 +217,6 @@ window.addEventListener("load", function () {
       }
     });
   });
-
-  // Video modal
-  const videoModalContainerRef = document.querySelector(
-    ".video-modal-container"
-  );
-  const videoModalRef = document.querySelector(".video-modal");
 
   document.querySelectorAll(".btn-watch").forEach(function (buttonRef) {
     buttonRef.addEventListener("click", function (btnClickEvent) {

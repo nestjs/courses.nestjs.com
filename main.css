@@ -698,7 +698,8 @@ a:active {
   color: #111;
 }
 
-.extension-modal-container .checkout-wrapper iframe {
+.extension-modal-container .checkout-wrapper iframe,
+.extension-modal-container .checkout-wrapper .video-preview-placeholder {
   margin-top: 25px;
 }
 
@@ -801,7 +802,7 @@ a:active {
   top: 0;
   right: 0;
   bottom: 0;
-  z-index: 100009;
+  z-index: 100010;
   display: none;
 }
 
@@ -902,13 +903,17 @@ a:active {
   font-size: 15px !important;
 }
 
-.checkout-wrapper iframe {
+.checkout-wrapper iframe,
+.video-preview-placeholder {
   margin: 0 auto;
   display: block;
   border-radius: 6px;
   max-width: 100%;
 }
 
+.video-preview-placeholder {
+  max-width: 380px;
+}
 .checkout-wrapper .price {
   text-align: center;
   font-size: 35px;
