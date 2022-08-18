@@ -145,6 +145,12 @@ window.addEventListener("load", function () {
       }
       const extensionModalContainerRef = document.querySelector(`.extension-modal-container[data-extension-key='${extensionKey}']`);
       if (extensionModalContainerRef) {
+        if (history.pushState) {
+          history.pushState(null, null, `#${extensionKey}`);
+        } else {
+          location.hash = `#${extensionKey}`;
+        }
+
         extensionModalContainerRef.classList.add("opened");
 
         const extensionModalRef = extensionModalContainerRef.querySelector('.extension-modal');
@@ -174,7 +180,11 @@ window.addEventListener("load", function () {
           if (!window.location.hash) {
             return;
           }
-          window.location.hash = '';
+          if (window.history.replaceState) {
+            window.history.replaceState(null, null, ' ');
+          } else {
+            window.location.hash = '';
+          }
         }
 
         const handler = function (event) {
