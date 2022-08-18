@@ -11,10 +11,9 @@
     />
     <link rel="stylesheet" href="lib/bootstrap.css" />
     <link rel="stylesheet" href="main.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,400;1,500&display=swap" rel="stylesheet">
     <meta
       name="description"
       content="Official NestJS Courses from the NestJS creator and core team members. Learn everything from fundamentals, to more advanced topics such as authentication, microservices, GraphQL and much more."
@@ -376,9 +375,6 @@
               fundamentals of a NestJS application from the Creator Kamil
               Mysliwiec himself, and Mark Pieszak (Core Team Member).
             </p>
-            <!--<p class="release-date">
-              Expected Release Date: <strong>August, 2020</strong>.
-            </p>-->
             <ul>
               <li>
                 <span><i class="fas fa-check"></i></span> Step-by-step lesson
@@ -1020,43 +1016,49 @@
                 </div>
               </div>
             </div>
-            <!--<h3 class="m-t-40">Extensions...</h3>
+            <h3 class="m-t-40">Extensions...</h3>
             <div class="curriculum-wrapper">
-              <div class="curriculum-block">
+              <div class="curriculum-block open-extension-trigger" data-extension-key="graphql-bundle">
                 <div class="extension-heading">
-                  <span class="coming-soon">Coming soon</span>
-                  <h5>GraphQL - Code first</h5>
-                  <span class="price">+49$</span>
+                  <span class="extension-label extension-label--bundle">Bundle -35%</span>
+                  <h5>GraphQL - Code first + Schema first</h5>
+                  <!--<span class="original-price">$69</span>-->
+                  <span class="price">+59$</span> 
                 </div>
               </div>
               <div class="curriculum-block">
-                <div class="extension-heading">
-                  <span class="coming-soon">Coming soon</span>
-                  <h5>GraphQL - Schema first</h5>
-                  <span class="price">+49$</span>
-                </div>
-              </div>
-              <div class="curriculum-block">
-                <div class="extension-heading">
-                  <span class="coming-soon">Coming soon</span>
+                <div class="extension-heading open-extension-trigger" data-extension-key="authentication">
+                  <span class="extension-label extension-label--pre-order">Pre-order -25%</span>
                   <h5>Authentication and Authorization</h5>
                   <span class="price">+49$</span>
                 </div>
               </div>
-              <div class="curriculum-block">
+              <div class="curriculum-block open-extension-trigger" data-extension-key="code-first">
                 <div class="extension-heading">
-                  <span class="coming-soon">Coming soon</span>
+                  <h5>GraphQL - Code first</h5>
+                  <span class="price">+39$</span>
+                </div>
+              </div>
+              <div class="curriculum-block open-extension-trigger" data-extension-key="schema-first">
+                <div class="extension-heading">
+                  <h5>GraphQL - Schema first</h5>
+                  <span class="price">+39$</span>
+                </div>
+              </div>
+              <div class="curriculum-block">
+                <div class="extension-heading extension-heading--coming-soon">
+                  <span class="extension-label extension-label--coming-soon">Coming soon</span>
                   <h5>Advanced concepts</h5>
                   <span class="price">+49$</span>
                 </div>
               </div>
               <div class="curriculum-block">
-                <div class="extension-heading">
-                  <span class="coming-soon">Coming soon</span>
+                <div class="extension-heading extension-heading--coming-soon">
+                  <span class="extension-label extension-label--coming-soon">Coming soon</span>
                   <h5>Microservices</h5>
                   <span class="price">+49$</span>
                 </div>
-              </div>-->
+              </div>
             </div>
           </div>
         </div>
@@ -1110,16 +1112,16 @@
         </div>
         <div class="row">
           <div class="col-sm-6 col-lg-3 highlight-block">
-            <div class="extension-card">
-              <div class="card-image">
-                <span class="coming-soon">Coming soon</span>
+            <div class="extension-card extension-card--bundle open-extension-trigger" data-extension-key="graphql-bundle">
+              <div class="card-image card-image--bundle">
+                <span class="extension-label extension-label--bundle">Bundle -35%</span>
                 <svg
                   height="15"
                   width="15"
                   viewBox="0 0 500 500"
                   class="triangle-1"
                 >
-                  <polygon points="250,120 100,400 400,400" fill="#e0244e" />
+                  <polygon points="250,120 100,400 400,400" fill="#c6219b" />
                 </svg>
                 <svg
                   height="15"
@@ -1127,28 +1129,30 @@
                   viewBox="0 0 500 500"
                   class="triangle-2"
                 >
-                  <polygon points="250,120 100,400 400,400" fill="#e0244e" />
+                  <polygon points="250,120 100,400 400,400" fill="#c6219b" />
                 </svg>
-                <img src="img/graphql.svg" width="50" />
+                <img src="img/graphql-2.svg" width="50" />
+                <img src="img/graphql.svg" width="50" class="second-ext-icon" />
               </div>
               <div class="card-header">
-                <h4>GraphQL</h4>
+                <h4>GraphQL - Bundle</h4>
+                <h5>Code first + Schema first</h5>
               </div>
               <div class="card-body">
                 <p>
-                  <i class="far fa-bookmark"></i> 21 lessons
-                  <i class="far fa-clock"></i> 3 hours
+                  <i class="far fa-bookmark"></i> 44 lessons
+                  <i class="far fa-clock"></i> 4 hours
                 </p>
                 <div class="extension-price">
-                  <span>$49</span>
+                  <span>$59</span>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-lg-3 highlight-block">
+          <div class="col-sm-6 col-lg-3 highlight-block open-extension-trigger" data-extension-key="authentication">
             <div class="extension-card">
               <div class="card-image">
-                <span class="coming-soon">Coming soon</span>
+                <span class="extension-label extension-label--pre-order">Pre-order -25%</span>
                 <svg
                   height="15"
                   width="15"
@@ -1173,7 +1177,7 @@
               <div class="card-body">
                 <p>
                   <i class="far fa-bookmark"></i> 19 lessons
-                  <i class="far fa-clock"></i> 2 hours
+                  <i class="far fa-clock"></i> - hours
                 </p>
                 <div class="extension-price">
                   <span>$49</span>
@@ -1182,9 +1186,79 @@
             </div>
           </div>
           <div class="col-sm-6 col-lg-3 highlight-block">
+            <div class="extension-card open-extension-trigger" data-extension-key="code-first">
+              <div class="card-image">
+                <svg
+                  height="15"
+                  width="15"
+                  viewBox="0 0 500 500"
+                  class="triangle-1"
+                >
+                  <polygon points="250,120 100,400 400,400" fill="#e0244e" />
+                </svg>
+                <svg
+                  height="15"
+                  width="15"
+                  viewBox="0 0 500 500"
+                  class="triangle-2"
+                >
+                  <polygon points="250,120 100,400 400,400" fill="#e0244e" />
+                </svg>
+                <img src="img/graphql.svg" width="50" />
+              </div>
+              <div class="card-header">
+                <h4>GraphQL - Code first</h4>
+              </div>
+              <div class="card-body">
+                <p>
+                  <i class="far fa-bookmark"></i> 23 lessons
+                  <i class="far fa-clock"></i> 2 hours
+                </p>
+                <div class="extension-price">
+                  <span>$39</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3 highlight-block">
+            <div class="extension-card open-extension-trigger" data-extension-key="schema-first">
+              <div class="card-image">
+                <svg
+                  height="15"
+                  width="15"
+                  viewBox="0 0 500 500"
+                  class="triangle-1"
+                >
+                  <polygon points="250,120 100,400 400,400" fill="#e0244e" />
+                </svg>
+                <svg
+                  height="15"
+                  width="15"
+                  viewBox="0 0 500 500"
+                  class="triangle-2"
+                >
+                  <polygon points="250,120 100,400 400,400" fill="#e0244e" />
+                </svg>
+                <img src="img/graphql.svg" width="50" />
+              </div>
+              <div class="card-header">
+                <h4>GraphQL - Schema first</h4>
+              </div>
+              <div class="card-body">
+                <p>
+                  <i class="far fa-bookmark"></i> 21 lessons
+                  <i class="far fa-clock"></i> 2 hours
+                </p>
+                <div class="extension-price">
+                  <span>$39</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3 highlight-block highlight-block--coming-soon">
             <div class="extension-card">
               <div class="card-image">
-                <span class="coming-soon">Coming soon</span>
+                <span class="extension-label extension-label--coming-soon">Coming soon</span>
                 <svg
                   height="15"
                   width="15"
@@ -1217,10 +1291,10 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-lg-3 highlight-block">
+          <div class="col-sm-6 col-lg-3 highlight-block highlight-block--coming-soon">
             <div class="extension-card">
               <div class="card-image">
-                <span class="coming-soon">Coming soon</span>
+                <span class="extension-label extension-label--coming-soon">Coming soon</span>
                 <svg
                   height="15"
                   width="15"
@@ -1448,6 +1522,955 @@
     </div>
     <div class="video-modal-container">
       <div class="video-modal"></div>
+    </div>
+    <div class="extension-modal-container" data-extension-key="authentication">
+      <div class="extension-modal course-info-wrapper">
+        <div class="extension-modal-content">
+        <div class="extension-info">
+          <h2><span class="extra-pre-order-discount">PRE-ORDER -25%</span><br />Authentication and Authorization</h2>
+          <p class="large-text">
+            Learn how to create your own hand-written Authentication and Authorization with NestJS.
+            Take full control over your Authn/Authz from access to refresh tokens, and everything in between.
+          </p>
+          <p>
+            Prepare for an in-depth guided course & walk-through of all the fundamentals of Authentication & Authorization from the Creator Kamil
+            Mysliwiec himself, and Mark Pieszak (Core Team Member).
+            <br />
+            <br />
+            <strong>Estimated Release Date:</strong> Q4 2022
+          </p>
+          <ul>
+            <li>
+              <span><i class="fas fa-check"></i></span> Save 25%!
+            </li>
+            <li>
+              <span><i class="fas fa-check"></i></span> Step-by-step lesson
+              progression, code everything alongside us!
+            </li>
+            <li>
+              <span><i class="fas fa-check"></i></span> Featuring 19 videos
+              (with subtitles)<!-- and 2,5 hours of content -->
+            </li>
+            <li>
+              <span><i class="fas fa-check"></i></span> Build a real-world
+              JWT-based authentication from scratch!
+            </li>
+            <li>
+              <span><i class="fas fa-check"></i></span> Learn how to implement server-side sessions
+            </li>
+            <li>
+              <span><i class="fas fa-check"></i></span> Bonus: Google integration and 2FA
+            </li>
+            <li>
+              <span><i class="fas fa-check"></i></span> Official NestJS
+              Certificate of Completion
+            </li>
+          </ul>
+          <h3 class="m-t-40">What's inside the extension...</h3>
+          <div class="curriculum-wrapper">
+            <div class="curriculum-block opened">
+              <div class="category-heading">
+                <h5>Authentication and Authorization extension</h5>
+                <span>19 lessons</span>
+              </div>
+              <div class="category-items">
+                <div class="video-item">
+                  <h6>1. Before we get started</h6>
+                  <span>-</span> 
+                </div>
+                <div class="video-item">
+                  <h6>
+                    2. Authentication and Authorization
+                  </h6>
+                  <span>-</span>
+                </div>
+                <div class="video-item">
+                  <h6>
+                    3. Creating a Users resource 
+                  </h6>
+                  <span>-</span>
+                </div>
+                <div class="video-item">
+                  <h6>4. Hashing Passwords</h6>
+                  <span>-</span>
+                </div>
+                <div class="video-item">
+                  <h6>5. Implementing Sign-in and Sign-up Routes</h6>
+                  <span>-</span>
+                </div>
+                <div class="video-item">
+                  <h6>6. What's JWT?</h6>
+                  <span>-</span>
+                </div>
+                <div class="video-item">
+                  <h6>7. Protecting our routes with a Guard</h6>
+                  <span>-</span>
+                </div>
+                <div class="video-item">
+                  <h6>8. Adding Public routes</h6>
+                  <span>-</span>
+                </div>
+                <div class="video-item">
+                  <h6>9. Active User decorator</h6>
+                  <span>-</span>
+                </div>
+                <div class="video-item">
+                  <h6>10. Implementing Refresh tokens</h6>
+                  <span>-</span>
+                </div>
+                <div class="video-item">
+                  <h6>11. Invalidating Tokens?</h6>
+                  <span>-</span>
+                </div>
+                <div class="video-item">
+                  <h6>12. Role-based Access Control</h6>
+                  <span>-</span>
+                </div>
+                <div class="video-item">
+                  <h6>13. Claims-based Authorization</h6>
+                  <span>-</span>
+                </div>
+                <div class="video-item">
+                  <h6>14. Policy-based Authorization</h6>
+                  <span>-</span>
+                </div>
+                <div class="video-item">
+                  <h6>15. Introduction to API Keys</h6>
+                  <span>-</span>
+                </div>
+                <div class="video-item">
+                  <h6>16. Integrate API Keys feature</h6>
+                  <span>-</span>
+                </div>
+                <div class="video-item">
+                  <h6>17. Bonus: Two-factor authentication</h6>
+                  <span>-</span>
+                </div>
+                <div class="video-item">
+                  <h6>18. Bonus: Google authentication</h6>
+                  <span>-</span>
+                </div>
+                <div class="video-item">
+                  <h6>19. Bonus: Sessions with Passport</h6>
+                  <span>-</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="checkout-wrapper">
+          <span class="close-icon">x</span>
+          <img src="img/no-preview-video.jpeg" class="video-preview-placeholder" />
+          <div class="teachers-wrapper clearfix">
+            <div class="teacher-meta">
+              <div class="teacher-image">
+                <img src="img/photo-kamil.png" />
+              </div>
+              <div class="teacher-text">
+                <h3>Kamil Mysliwiec</h3>
+                <p>Creator of NestJS</p>
+              </div>
+            </div>
+            <div class="teacher-meta">
+              <div class="teacher-image">
+                <img src="img/photo-mark.png" />
+              </div>
+              <div class="teacher-text">
+                <h3>Mark Pieszak</h3>
+                <p>Core Team Member</p>
+              </div>
+            </div>
+          </div>
+          <h5 class="price">
+            <span class="discount">-25%</span>
+            <span class="current-price">$49.99</span>
+            <span class="original-price">$65.99</span>
+            <span class="vat"
+              >+VAT for EU <img src="/img/eu-flag.svg" width="19"
+            /></span>
+          </h5>
+          <div class="discount-tooltip tooltip">
+            <p>
+              Is your company located in
+              <img
+                src="https://raw.githubusercontent.com/hjnilsson/country-flags/master/svg/in.svg"
+                width="20"
+                alt="Flag"
+              />?<br />
+              Get a <span>-60%</span> parity discount
+              <a
+                href="mailto:support@nestjs.com?subject=Courses - Parity discount&cc=hello@trilon.io&body=Hi team,%0D%0A%0D%0AWe would be interested in getting the parity discount.%0D%0A%0D%0ANOTE: This discount is available to companies, not individuals.%0D%0A%0D%0ACompany: ...%0D%0AWebsite: ...%0D%0ALocation: ... %0D%0ANumber of copies (for each employee): ... [minimum 3 employees]"
+                >now</a
+              >!
+            </p>
+          </div>
+          <a
+            href="https://learn.nestjs.com/purchase?product_id=4213276"
+            class="btn btn-green"
+          >
+            Pre-Order Now
+            <span class="icon"><i class="fas fa-shopping-cart"></i></span>
+          </a>
+          <span class="discount-note"
+            >Got a <strong>discount code</strong>? Add it in the next
+            step.</span
+          >
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="extension-modal-container" data-extension-key="graphql-bundle">
+      <div class="extension-modal course-info-wrapper">
+        <div class="extension-modal-content">
+        <div class="extension-info">
+          <h2><span class="extra-bundle-discount">BUNDLE -35%</span><br />GraphQL - Bundle</h2>
+          <p class="large-text">
+            Learn <strong>BOTH (code-first & schema-first)</strong> approaches to creating GraphQL APIs 
+            with NestJS.  Master GraphQL concepts, tips & tricks, and everything you need to
+            your own enterprise-grade GraphQL APIs.
+          </p>
+          <p>
+            Save 35%, and get access to <strong>TWO</strong> courses, and prepare for in-depth 
+            guided walk-through of GraphQL fundamentals and utilizing the code-first 
+            & schema-first approaches within NestJS applications from the 
+            Creator Kamil Mysliwiec himself, and Mark Pieszak (Core Team Member).
+          </p>
+          <ul>
+            <li>
+              <span><i class="fas fa-check"></i></span> Save 35%!
+            </li>
+            <li>
+              <span><i class="fas fa-check"></i></span> Step-by-step lesson
+              progression, code everything alongside us!
+            </li>
+            <li>
+              <span><i class="fas fa-check"></i></span> Featuring 44 videos
+              (with subtitles) and 4 hours of content
+            </li>
+            <li>
+              <span><i class="fas fa-check"></i></span> Build a real-world
+              GraphQL API application with NestJS
+            </li>
+            <li>
+              <span><i class="fas fa-check"></i></span> Learn how to interact
+              with a Postgres database
+            </li>
+            <li>
+              <span><i class="fas fa-check"></i></span> Official NestJS
+              Certificate of Completion
+            </li>
+          </ul>
+          <h3 class="m-t-40">What's inside this bundle...</h3>
+          <div class="curriculum-wrapper">
+            <div class="curriculum-block opened">
+              <div class="category-heading">
+                <h5>Code first extension</h5>
+                <span>23 lessons</span>
+              </div>
+              <div class="category-items">
+                <div class="video-item">
+                  <h6>1. Before we get started</h6>
+                  <span>1:24</span> 
+                </div>
+                <div class="video-item">
+                  <h6>
+                    2. Introduction to GraphQL with NestJS
+                  </h6>
+                  <span>5:04</span>
+                </div>
+                <div class="video-item">
+                  <h6 class="preview-video-title">
+                    3. Code First vs Schema First 
+                  </h6>
+                  <span>1:07</span>
+                  <button class="btn-watch" data-video-id="740669317">
+                    <i class="fas fa-play"></i> Watch
+                  </button>
+                </div>
+                <div class="video-item">
+                  <h6>4. Creating our first GraphQL Application</h6>
+                  <span>5:18</span>
+                </div>
+                <div class="video-item">
+                  <h6>5. Introduction to Resolvers and Object Types</h6>
+                  <span>6:46</span>
+                </div>
+                <div class="video-item">
+                  <h6>6. GraphQL Schemas, Types, and Scalars</h6>
+                  <span>4:02</span>
+                </div>
+                <div class="video-item">
+                  <h6>7. More on Types</h6>
+                  <span>3:09</span>
+                </div>
+                <div class="video-item">
+                  <h6>8. Passing Arguments: Returning a Coffee by ID</h6>
+                  <span>3:02</span>
+                </div>
+                <div class="video-item">
+                  <h6>9. Manipulating Data with Mutations</h6>
+                  <span>5:15</span>
+                </div>
+                <div class="video-item">
+                  <h6>10. Using GraphQL Variables</h6>
+                  <span>1:26</span>
+                </div>
+                <div class="video-item">
+                  <h6>11. Creating a Service</h6>
+                  <span>3:18</span>
+                </div>
+                <div class="video-item">
+                  <h6>12. Connecting to a Database with TypeOrm</h6>
+                  <span>5:30</span>
+                </div>
+                <div class="video-item">
+                  <h6>13. Using Repository to Access Database</h6>
+                  <span>3:20</span>
+                </div>
+                <div class="video-item">
+                  <h6>14. Adding Update and Delete Operations</h6>
+                  <span>4:44</span>
+                </div>
+                <div class="video-item">
+                  <h6>15. Auto-validate Input Data</h6>
+                  <span>2:25</span>
+                </div>
+                <div class="video-item">
+                  <h6>16. Adding Relation to two Entities</h6>
+                  <span>8:04</span>
+                </div>
+                <div class="video-item">
+                  <h6>17. Using Field Resolvers</h6>
+                  <span>6:30</span>
+                </div>
+                <div class="video-item">
+                  <h6>18. Understanding Custom Scalar Types</h6>
+                  <span>6:43</span>
+                </div>
+                <div class="video-item">
+                  <h6>19. Using GraphQL Interfaces</h6>
+                  <span>8:36</span>
+                </div>
+                <div class="video-item">
+                  <h6>20. Unions and Enums</h6>
+                  <span>5:57</span>
+                </div>
+                <div class="video-item">
+                  <h6>21. Field Middleware</h6>
+                  <span>4:40</span>
+                </div>
+                <div class="video-item">
+                  <h6>22. Real-time Updates with Subscriptions</h6>
+                  <span>7:31</span>
+                </div>
+                <div class="video-item">
+                  <h6>23. Batching and Caching with Data Loader</h6>
+                  <span>10:30</span>
+                </div>
+              </div>
+            </div>
+            <div class="curriculum-block">
+              <div class="category-heading">
+                <h5>Schema first extension</h5>
+                <span>21 lessons</span>
+              </div>
+              <div class="category-items">
+                <div class="video-item">
+                  <h6>1. Before we get started</h6>
+                  <span>1:24</span> 
+                </div>
+                <div class="video-item">
+                  <h6>
+                    2. Introduction to GraphQL with NestJS
+                  </h6>
+                  <span>5:04</span>
+                </div>
+                <div class="video-item">
+                  <h6 class="preview-video-title">
+                    3. Code First vs Schema First 
+                  </h6>
+                  <span>1:07</span>
+                  <button class="btn-watch" data-video-id="740669485">
+                    <i class="fas fa-play"></i> Watch
+                  </button>
+                </div>
+                <div class="video-item">
+                  <h6>4. Creating our first GraphQL Application</h6>
+                  <span>6:44</span>
+                </div>
+                <div class="video-item">
+                  <h6>5. Introduction to Resolvers and Object Types</h6>
+                  <span>8:07</span>
+                </div>
+                <div class="video-item">
+                  <h6>6. GraphQL Schemas, Types, and Scalars</h6>
+                  <span>3:00</span>
+                </div>
+                <div class="video-item">
+                  <h6>7. Passing Arguments: Returning a Coffee by ID</h6>
+                  <span>2:52</span>
+                </div>
+                <div class="video-item">
+                  <h6>8. Using GraphQL Variables</h6>
+                  <span>1:26</span>
+                </div>
+                <div class="video-item">
+                  <h6>9. Manipulating Data with Mutations</h6>
+                  <span>4:32</span>
+                </div>
+                <div class="video-item">
+                  <h6>10. Creating a Service</h6>
+                  <span>3:17</span>
+                </div>
+                <div class="video-item">
+                  <h6>11. Connecting to a Database with TypeOrm</h6>
+                  <span>8:19</span>
+                </div>
+                <div class="video-item">
+                  <h6>12. Using Repository to Access Database</h6>
+                  <span>3:57</span>
+                </div>
+                <div class="video-item">
+                  <h6>13. Adding Update and Delete Operations</h6>
+                  <span>4:40</span>
+                </div>
+                <div class="video-item">
+                  <h6>14. Auto-validate Input Data</h6>
+                  <span>4:47</span>
+                </div>
+                <div class="video-item">
+                  <h6>15. Adding Relation to two Entities</h6>
+                  <span>9:26</span>
+                </div>
+                <div class="video-item">
+                  <h6>16. Using Field Resolvers</h6>
+                  <span>6:17</span>
+                </div>
+                <div class="video-item">
+                  <h6>17. Understanding Custom Scalar Types</h6>
+                  <span>5:57</span>
+                </div>
+                <div class="video-item">
+                  <h6>18. Using GraphQL Interfaces</h6>
+                  <span>7:14</span>
+                </div>
+                <div class="video-item">
+                  <h6>19. Unions and Enums</h6>
+                  <span>5:34</span>
+                </div>
+                <div class="video-item">
+                  <h6>20. Real-time Updates with Subscriptions</h6>
+                  <span>7:29</span>
+                </div>
+                <div class="video-item">
+                  <h6>21. Batching and Caching with Data Loader</h6>
+                  <span>10:29</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="checkout-wrapper">
+          <span class="close-icon">x</span>
+          <iframe
+            src="https://player.vimeo.com/video/740669317?title=0&byline=0&portrait=0&sidedock=0&controls=0"
+            width="380"
+            height="210"
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen
+          ></iframe>
+          <div class="teachers-wrapper clearfix">
+            <div class="teacher-meta">
+              <div class="teacher-image">
+                <img src="img/photo-kamil.png" />
+              </div>
+              <div class="teacher-text">
+                <h3>Kamil Mysliwiec</h3>
+                <p>Creator of NestJS</p>
+              </div>
+            </div>
+            <div class="teacher-meta">
+              <div class="teacher-image">
+                <img src="img/photo-mark.png" />
+              </div>
+              <div class="teacher-text">
+                <h3>Mark Pieszak</h3>
+                <p>Core Team Member</p>
+              </div>
+            </div>
+          </div>
+          <h5 class="price">
+            <span class="discount">-35%</span>
+            <span class="current-price">$59.99</span>
+            <span class="original-price">$89.99</span>
+            <span class="vat"
+              >+VAT for EU <img src="/img/eu-flag.svg" width="19"
+            /></span>
+          </h5>
+          <div class="discount-tooltip tooltip">
+            <p>
+              Is your company located in
+              <img
+                src="https://raw.githubusercontent.com/hjnilsson/country-flags/master/svg/in.svg"
+                width="20"
+                alt="Flag"
+              />?<br />
+              Get a <span>-60%</span> parity discount
+              <a
+                href="mailto:support@nestjs.com?subject=Courses - Parity discount&cc=hello@trilon.io&body=Hi team,%0D%0A%0D%0AWe would be interested in getting the parity discount.%0D%0A%0D%0ANOTE: This discount is available to companies, not individuals.%0D%0A%0D%0ACompany: ...%0D%0AWebsite: ...%0D%0ALocation: ... %0D%0ANumber of copies (for each employee): ... [minimum 3 employees]"
+                >now</a
+              >!
+            </p>
+          </div>
+          <a
+            href="https://learn.nestjs.com/purchase?product_id=4215020"
+            class="btn btn-green"
+          >
+            Purchase Now
+            <span class="icon"><i class="fas fa-shopping-cart"></i></span>
+          </a>
+          <span class="discount-note"
+            >Got a <strong>discount code</strong>? Add it in the next
+            step.</span
+          >
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="extension-modal-container" data-extension-key="code-first">
+      <div class="extension-modal course-info-wrapper">
+        <div class="extension-modal-content">
+        <div class="extension-info">
+          <h2>GraphQL - Code first</h2>
+          <p class="large-text">
+            Learn everything about the <strong>code-first</strong> approach to creating GraphQL APIs
+            with NestJS.  Master GraphQL concepts, tips & tricks, and everything you need to
+            your own enterprise-grade GraphQL APIs.
+          </p>
+          <p>
+            Prepare for an in-depth guided course & walk-through of GraphQL
+            fundamentals and utilizing the code-first approaches within NestJS applications
+            from the Creator Kamil Mysliwiec himself, and Mark Pieszak (Core Team Member).
+          </p>
+          <ul>
+            <li>
+              <span><i class="fas fa-check"></i></span> Step-by-step lesson
+              progression, code everything alongside us!
+            </li>
+            <li>
+              <span><i class="fas fa-check"></i></span> Featuring 23 videos
+              (with subtitles) and 2 hours of content
+            </li>
+            <li>
+              <span><i class="fas fa-check"></i></span> Build a real-world
+              GraphQL API application with NestJS
+            </li>
+            <li>
+              <span><i class="fas fa-check"></i></span> Learn how to interact
+              with a Postgres database
+            </li>
+            <li>
+              <span><i class="fas fa-check"></i></span> Official NestJS
+              Certificate of Completion
+            </li>
+          </ul>
+          <blockquote>
+            <em>Not sure which approach is best for your application? Check out
+            the <a href="#graphql-bundle" target="blank">GraphQL Bundle</a> to learn about both approaches,
+            and <strong>save 35%!</strong></em>
+          </blockquote>
+          <h3 class="m-t-40">What's inside the extension...</h3>
+          <div class="curriculum-wrapper">
+            <div class="curriculum-block opened">
+              <div class="category-heading category-heading--no-expand">
+                <h5>Code first extension</h5>
+                <span>23 lessons</span>
+              </div>
+              <div class="category-items">
+                <div class="video-item">
+                  <h6>1. Before we get started</h6>
+                  <span>1:24</span> 
+                </div>
+                <div class="video-item">
+                  <h6>
+                    2. Introduction to GraphQL with NestJS
+                  </h6>
+                  <span>5:04</span>
+                </div>
+                <div class="video-item">
+                  <h6 class="preview-video-title">
+                    3. Code First vs Schema First 
+                  </h6>
+                  <span>1:07</span>
+                  <button class="btn-watch" data-video-id="740669317">
+                    <i class="fas fa-play"></i> Watch
+                  </button>
+                </div>
+                <div class="video-item">
+                  <h6>4. Creating our first GraphQL Application</h6>
+                  <span>5:18</span>
+                </div>
+                <div class="video-item">
+                  <h6>5. Introduction to Resolvers and Object Types</h6>
+                  <span>6:46</span>
+                </div>
+                <div class="video-item">
+                  <h6>6. GraphQL Schemas, Types, and Scalars</h6>
+                  <span>4:02</span>
+                </div>
+                <div class="video-item">
+                  <h6>7. More on Types</h6>
+                  <span>3:09</span>
+                </div>
+                <div class="video-item">
+                  <h6>8. Passing Arguments: Returning a Coffee by ID</h6>
+                  <span>3:02</span>
+                </div>
+                <div class="video-item">
+                  <h6>9. Manipulating Data with Mutations</h6>
+                  <span>5:15</span>
+                </div>
+                <div class="video-item">
+                  <h6>10. Using GraphQL Variables</h6>
+                  <span>1:26</span>
+                </div>
+                <div class="video-item">
+                  <h6>11. Creating a Service</h6>
+                  <span>3:18</span>
+                </div>
+                <div class="video-item">
+                  <h6>12. Connecting to a Database with TypeOrm</h6>
+                  <span>5:30</span>
+                </div>
+                <div class="video-item">
+                  <h6>13. Using Repository to Access Database</h6>
+                  <span>3:20</span>
+                </div>
+                <div class="video-item">
+                  <h6>14. Adding Update and Delete Operations</h6>
+                  <span>4:44</span>
+                </div>
+                <div class="video-item">
+                  <h6>15. Auto-validate Input Data</h6>
+                  <span>2:25</span>
+                </div>
+                <div class="video-item">
+                  <h6>16. Adding Relation to two Entities</h6>
+                  <span>8:04</span>
+                </div>
+                <div class="video-item">
+                  <h6>17. Using Field Resolvers</h6>
+                  <span>6:30</span>
+                </div>
+                <div class="video-item">
+                  <h6>18. Understanding Custom Scalar Types</h6>
+                  <span>6:43</span>
+                </div>
+                <div class="video-item">
+                  <h6>19. Using GraphQL Interfaces</h6>
+                  <span>8:36</span>
+                </div>
+                <div class="video-item">
+                  <h6>20. Unions and Enums</h6>
+                  <span>5:57</span>
+                </div>
+                <div class="video-item">
+                  <h6>21. Field Middleware</h6>
+                  <span>4:40</span>
+                </div>
+                <div class="video-item">
+                  <h6>22. Real-time Updates with Subscriptions</h6>
+                  <span>7:31</span>
+                </div>
+                <div class="video-item">
+                  <h6>23. Batching and Caching with Data Loader</h6>
+                  <span>10:30</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="checkout-wrapper">
+          <span class="close-icon">x</span>
+          <iframe
+            src="https://player.vimeo.com/video/740669317?title=0&byline=0&portrait=0&sidedock=0&controls=0"
+            width="380"
+            height="210"
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen
+          ></iframe>
+          <div class="teachers-wrapper clearfix">
+            <div class="teacher-meta">
+              <div class="teacher-image">
+                <img src="img/photo-kamil.png" />
+              </div>
+              <div class="teacher-text">
+                <h3>Kamil Mysliwiec</h3>
+                <p>Creator of NestJS</p>
+              </div>
+            </div>
+            <div class="teacher-meta">
+              <div class="teacher-image">
+                <img src="img/photo-mark.png" />
+              </div>
+              <div class="teacher-text">
+                <h3>Mark Pieszak</h3>
+                <p>Core Team Member</p>
+              </div>
+            </div>
+          </div>
+          <h5 class="price">
+            <span class="discount">-35%</span>
+            <span class="current-price">$39.99</span>
+            <span class="original-price">$59.99</span>
+            <span class="vat"
+              >+VAT for EU <img src="/img/eu-flag.svg" width="19"
+            /></span>
+          </h5>
+          <div class="discount-tooltip tooltip">
+            <p>
+              Is your company located in
+              <img
+                src="https://raw.githubusercontent.com/hjnilsson/country-flags/master/svg/in.svg"
+                width="20"
+                alt="Flag"
+              />?<br />
+              Get a <span>-60%</span> parity discount
+              <a
+                href="mailto:support@nestjs.com?subject=Courses - Parity discount&cc=hello@trilon.io&body=Hi team,%0D%0A%0D%0AWe would be interested in getting the parity discount.%0D%0A%0D%0ANOTE: This discount is available to companies, not individuals.%0D%0A%0D%0ACompany: ...%0D%0AWebsite: ...%0D%0ALocation: ... %0D%0ANumber of copies (for each employee): ... [minimum 3 employees]"
+                >now</a
+              >!
+            </p>
+          </div>
+          <a
+            href="https://learn.nestjs.com/purchase?product_id=4215017"
+            class="btn btn-green"
+          >
+            Purchase Now
+            <span class="icon"><i class="fas fa-shopping-cart"></i></span>
+          </a>
+          <span class="discount-note"
+            >Got a <strong>discount code</strong>? Add it in the next
+            step.</span
+          >
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="extension-modal-container" data-extension-key="schema-first">
+      <div class="extension-modal course-info-wrapper">
+        <div class="extension-modal-content">
+        <div class="extension-info">
+          <h2>GraphQL - Schema first</h2>
+          <p class="large-text">
+            Learn everything about the <strong>schema-first</strong> approach to creating GraphQL APIs 
+            with NestJS.  Master GraphQL concepts, tips & tricks, and everything you need to
+            your own enterprise-grade GraphQL APIs.
+          </p>
+          <p>
+            Prepare for an in-depth guided course & walk-through of GraphQL
+            fundamentals and utilizing the schema-first approaches within NestJS applications 
+            from the Creator Kamil Mysliwiec himself, and Mark Pieszak (Core Team Member).
+          </p>
+          <ul>
+            <li>
+              <span><i class="fas fa-check"></i></span> Step-by-step lesson
+              progression, code everything alongside us!
+            </li>
+            <li>
+              <span><i class="fas fa-check"></i></span> Featuring 21 videos
+              (with subtitles) and 2 hours of content
+            </li>
+            <li>
+              <span><i class="fas fa-check"></i></span> Build a real-world
+              GraphQL API application with NestJS
+            </li>
+            <li>
+              <span><i class="fas fa-check"></i></span> Learn how to interact
+              with a Postgres database
+            </li>
+            <li>
+              <span><i class="fas fa-check"></i></span> Official NestJS
+              Certificate of Completion
+            </li>
+          </ul>
+          <blockquote>
+            <em>Not sure which approach is best for your application? Check out 
+            the <a href="#graphql-bundle" target="blank">GraphQL Bundle</a> to learn about both approaches, 
+            and <strong>save 35%!</strong></em>
+          </blockquote>
+          <h3 class="m-t-40">What's inside the extension...</h3>
+          <div class="curriculum-wrapper">
+            <div class="curriculum-block opened">
+              <div class="category-heading category-heading--no-expand">
+                <h5>Schema first extension</h5>
+                <span>21 lessons</span>
+              </div>
+              <div class="category-items">
+                <div class="video-item">
+                  <h6>1. Before we get started</h6>
+                  <span>1:24</span> 
+                </div>
+                <div class="video-item">
+                  <h6>
+                    2. Introduction to GraphQL with NestJS
+                  </h6>
+                  <span>5:04</span>
+                </div>
+                <div class="video-item">
+                  <h6 class="preview-video-title">
+                    3. Code First vs Schema First 
+                  </h6>
+                  <span>1:07</span>
+                  <button class="btn-watch" data-video-id="740669485">
+                    <i class="fas fa-play"></i> Watch
+                  </button>
+                </div>
+                <div class="video-item">
+                  <h6>4. Creating our first GraphQL Application</h6>
+                  <span>6:44</span>
+                </div>
+                <div class="video-item">
+                  <h6>5. Introduction to Resolvers and Object Types</h6>
+                  <span>8:07</span>
+                </div>
+                <div class="video-item">
+                  <h6>6. GraphQL Schemas, Types, and Scalars</h6>
+                  <span>3:00</span>
+                </div>
+                <div class="video-item">
+                  <h6>7. Passing Arguments: Returning a Coffee by ID</h6>
+                  <span>2:52</span>
+                </div>
+                <div class="video-item">
+                  <h6>8. Using GraphQL Variables</h6>
+                  <span>1:26</span>
+                </div>
+                <div class="video-item">
+                  <h6>9. Manipulating Data with Mutations</h6>
+                  <span>4:32</span>
+                </div>
+                <div class="video-item">
+                  <h6>10. Creating a Service</h6>
+                  <span>3:17</span>
+                </div>
+                <div class="video-item">
+                  <h6>11. Connecting to a Database with TypeOrm</h6>
+                  <span>8:19</span>
+                </div>
+                <div class="video-item">
+                  <h6>12. Using Repository to Access Database</h6>
+                  <span>3:57</span>
+                </div>
+                <div class="video-item">
+                  <h6>13. Adding Update and Delete Operations</h6>
+                  <span>4:40</span>
+                </div>
+                <div class="video-item">
+                  <h6>14. Auto-validate Input Data</h6>
+                  <span>4:47</span>
+                </div>
+                <div class="video-item">
+                  <h6>15. Adding Relation to two Entities</h6>
+                  <span>9:26</span>
+                </div>
+                <div class="video-item">
+                  <h6>16. Using Field Resolvers</h6>
+                  <span>6:17</span>
+                </div>
+                <div class="video-item">
+                  <h6>17. Understanding Custom Scalar Types</h6>
+                  <span>5:57</span>
+                </div>
+                <div class="video-item">
+                  <h6>18. Using GraphQL Interfaces</h6>
+                  <span>7:14</span>
+                </div>
+                <div class="video-item">
+                  <h6>19. Unions and Enums</h6>
+                  <span>5:34</span>
+                </div>
+                <div class="video-item">
+                  <h6>20. Real-time Updates with Subscriptions</h6>
+                  <span>7:29</span>
+                </div>
+                <div class="video-item">
+                  <h6>21. Batching and Caching with Data Loader</h6>
+                  <span>10:29</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="checkout-wrapper">
+          <span class="close-icon">x</span>
+          <iframe
+            src="https://player.vimeo.com/video/740669485?title=0&byline=0&portrait=0&sidedock=0&controls=0"
+            width="380"
+            height="210"
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen
+          ></iframe>
+          <div class="teachers-wrapper clearfix">
+            <div class="teacher-meta">
+              <div class="teacher-image">
+                <img src="img/photo-kamil.png" />
+              </div>
+              <div class="teacher-text">
+                <h3>Kamil Mysliwiec</h3>
+                <p>Creator of NestJS</p>
+              </div>
+            </div>
+            <div class="teacher-meta">
+              <div class="teacher-image">
+                <img src="img/photo-mark.png" />
+              </div>
+              <div class="teacher-text">
+                <h3>Mark Pieszak</h3>
+                <p>Core Team Member</p>
+              </div>
+            </div>
+          </div>
+          <h5 class="price">
+            <span class="discount">-35%</span>
+            <span class="current-price">$39.99</span>
+            <span class="original-price">$59.99</span>
+            <span class="vat"
+              >+VAT for EU <img src="/img/eu-flag.svg" width="19"
+            /></span>
+          </h5>
+          <div class="discount-tooltip tooltip">
+            <p>
+              Is your company located in
+              <img
+                src="https://raw.githubusercontent.com/hjnilsson/country-flags/master/svg/in.svg"
+                width="20"
+                alt="Flag"
+              />?<br />
+              Get a <span>-60%</span> parity discount
+              <a
+                href="mailto:support@nestjs.com?subject=Courses - Parity discount&cc=hello@trilon.io&body=Hi team,%0D%0A%0D%0AWe would be interested in getting the parity discount.%0D%0A%0D%0ANOTE: This discount is available to companies, not individuals.%0D%0A%0D%0ACompany: ...%0D%0AWebsite: ...%0D%0ALocation: ... %0D%0ANumber of copies (for each employee): ... [minimum 3 employees]"
+                >now</a
+              >!
+            </p>
+          </div>
+          <a
+            href="https://learn.nestjs.com/purchase?product_id=4215018"
+            class="btn btn-green"
+          >
+            Purchase Now
+            <span class="icon"><i class="fas fa-shopping-cart"></i></span>
+          </a>
+          <span class="discount-note"
+            >Got a <strong>discount code</strong>? Add it in the next
+            step.</span
+          >
+        </div>
+        </div>
+      </div>
     </div>
     <footer class="page-footer">
       <div class="container">
