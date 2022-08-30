@@ -259,8 +259,15 @@ a:active {
 .highlights-wrapper,
 .discover-wrapper {
   background: #f1f3f3;
-  padding: 100px 0;
   text-align: center;
+}
+
+.highlights-wrapper {
+  padding: 100px 0;
+}
+
+.discover-wrapper {
+  padding: 0 0 100px;
 }
 
 .highlights-wrapper .heading h4,
@@ -373,6 +380,10 @@ a:active {
 
 .highlight-block:not(.highlight-block--coming-soon) {
   cursor: pointer;
+}
+.highlight-block--coming-soon .extension-card {
+  background: #e2e2e2;
+  filter: grayscale(1);
 }
 
 .highlight-block:not(.highlight-block--coming-soon):hover .extension-card {
@@ -811,16 +822,15 @@ a:active {
 }
 
 .companies-tiles {
-  max-width: 800px;
   margin: 70px auto;
 }
 
 .companies-tiles a {
   text-align: center;
   height: 60px;
-  width: 25%;
+  width: 20%;
   float: left;
-  margin: 35px 0;
+  margin: 30px 0;
   position: relative;
 }
 
