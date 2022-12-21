@@ -257,7 +257,6 @@ window.addEventListener("load", function () {
     }
     hash = hash.slice(1);
     const buttonRef = document.querySelector(`.open-extension-trigger[data-extension-key='${hash}']`);
-    console.log(buttonRef)
     if (buttonRef) {
       buttonRef.click();
     }
