@@ -1263,12 +1263,14 @@ a:active {
   transform: rotate(218deg);
 }
 
-.highlight-block:nth-of-type(2) .triangle-1 {
+.highlight-block:nth-of-type(2) .triangle-1,
+.highlight-block:nth-of-type(6) .triangle-1 {
   transform: rotate(125deg);
   top: 60px;
 }
 
-.highlight-block:nth-of-type(2) .triangle-2 {
+.highlight-block:nth-of-type(2) .triangle-2,
+.highlight-block:nth-of-type(6) .triangle-2 {
   transform: rotate(188deg);
   top: 70px;
 }
@@ -1333,7 +1335,7 @@ a:active {
   position: static;
   left: auto;
   top: auto;
-  margin-right: 10px;
+  margin-right: 5px;
   padding: 3px 5px;
 }
 
@@ -1372,6 +1374,10 @@ a:active {
 
 .extension-label--pre-order {
   background: #27ccb3;
+}
+
+.extension-label--early-pre-order {
+  background: #e0244e;
 }
 
 .extension-label--coming-soon {
