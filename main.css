@@ -1339,6 +1339,15 @@ a:active {
   padding: 3px 5px;
 }
 
+.extension-heading h5 svg, .card-header h4 svg {
+  color: #afafaf;
+  margin-left: 4px;
+}
+
+.card-header h4 svg {
+  font-size: 15px;
+}
+
 .extension-heading .price {
   color: #27ccb3;
   font-size: 16px;

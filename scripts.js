@@ -136,6 +136,14 @@ window.addEventListener("load", function () {
     });
   });
 
+  document.querySelectorAll("[data-extension-link]").forEach(function (el) {
+    el.addEventListener("click", function (event) {
+      event.preventDefault();
+      const link = el.getAttribute("data-extension-link");
+      window.open(link, "_blank");
+    });
+  });
+
     // Video modal
   const videoModalContainerRef = document.querySelector(
     ".video-modal-container"
