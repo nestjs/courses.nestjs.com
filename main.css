@@ -1340,6 +1340,10 @@ a:active {
   margin: 0 5px 0 10px;
 }
 
+.extension-card:not(.extension-card--bundle) .card-body svg path {
+  fill: url(#primary-gradient);
+}
+
 .extension-card--bundle .card-body svg {
   color: #c6219b;
 }
