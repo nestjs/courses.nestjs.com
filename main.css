@@ -119,7 +119,6 @@ a:active {
   font-size: 22px;
 }
 
-
 .nav-wrapper > li:hover > .sub-nav-outlet {
   visibility: visible;
   opacity: 1;
