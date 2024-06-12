@@ -114,6 +114,19 @@ window.addEventListener("load", function () {
     });
   }
 
+  const body = this.document.querySelector('body');
+  const mobileNavIcon = this.document.querySelector('.mobile-nav-icon');
+  const mobileNav = this.document.querySelector('.mobile-nav');
+  const mobileNavClose = this.document.querySelector('.mobile-nav-close');
+  mobileNavIcon.addEventListener('click', function() {
+    mobileNav.classList.add('open');
+    body.classList.add('mobile-nav-open');
+  });
+  mobileNavClose.addEventListener('click', function() {
+    mobileNav.classList.remove('open');
+    body.classList.remove('mobile-nav-open');
+  });
+
   document.querySelectorAll(".category-heading").forEach(function (headingRef) {
     if (headingRef.classList.contains('category-heading--no-expand')) {
       return;
