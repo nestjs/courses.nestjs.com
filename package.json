@@ -5,6 +5,7 @@
   "scripts": {
     "build": "rm -rf dist && parcel build index.html --public-url ./ && npm run copy-assets",
     "copy-assets": "copyfiles img/* dist && copyfiles img/flags/* dist",
+    "format": "npx prettier --write index.html scripts.js main.css",
     "start": "parcel index.html",
     "start:watch": "parcel watch index.html"
   },

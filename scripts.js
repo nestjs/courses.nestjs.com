@@ -114,21 +114,21 @@ window.addEventListener("load", function () {
     });
   }
 
-  const body = this.document.querySelector('body');
-  const mobileNavIcon = this.document.querySelector('.mobile-nav-icon');
-  const mobileNav = this.document.querySelector('.mobile-nav');
-  const mobileNavClose = this.document.querySelector('.mobile-nav-close');
-  mobileNavIcon.addEventListener('click', function() {
-    mobileNav.classList.add('open');
-    body.classList.add('mobile-nav-open');
+  const body = this.document.querySelector("body");
+  const mobileNavIcon = this.document.querySelector(".mobile-nav-icon");
+  const mobileNav = this.document.querySelector(".mobile-nav");
+  const mobileNavClose = this.document.querySelector(".mobile-nav-close");
+  mobileNavIcon.addEventListener("click", function () {
+    mobileNav.classList.add("open");
+    body.classList.add("mobile-nav-open");
   });
-  mobileNavClose.addEventListener('click', function() {
-    mobileNav.classList.remove('open');
-    body.classList.remove('mobile-nav-open');
+  mobileNavClose.addEventListener("click", function () {
+    mobileNav.classList.remove("open");
+    body.classList.remove("mobile-nav-open");
   });
 
   document.querySelectorAll(".category-heading").forEach(function (headingRef) {
-    if (headingRef.classList.contains('category-heading--no-expand')) {
+    if (headingRef.classList.contains("category-heading--no-expand")) {
       return;
     }
     headingRef.addEventListener("click", function (el) {
@@ -136,7 +136,7 @@ window.addEventListener("load", function () {
         this.parentElement.classList.remove("opened");
         if (this.parentNode && this.parentNode.previousElementSibling) {
           this.parentNode.previousElementSibling.classList.remove(
-            "opened-below"
+            "opened-below",
           );
         }
         toggleCheckoutPosition();
@@ -157,87 +157,101 @@ window.addEventListener("load", function () {
     });
   });
 
-    // Video modal
+  // Video modal
   const videoModalContainerRef = document.querySelector(
-    ".video-modal-container"
+    ".video-modal-container",
   );
   const videoModalRef = document.querySelector(".video-modal");
 
   // Extensions modal
-  document.querySelectorAll(".open-extension-trigger").forEach(function (buttonRef) {
-    buttonRef.addEventListener("click", function (btnClickEvent) {
-      const extensionKey = buttonRef.getAttribute("data-extension-key");
-      if (!extensionKey) {
-        return;
-      }
-      const extensionModalContainerRef = document.querySelector(`.extension-modal-container[data-extension-key='${extensionKey}']`);
-      if (extensionModalContainerRef) {
-        if (history.pushState) {
-          history.pushState(null, null, `#${extensionKey}`);
-        } else {
-          location.hash = `#${extensionKey}`;
+  document
+    .querySelectorAll(".open-extension-trigger")
+    .forEach(function (buttonRef) {
+      buttonRef.addEventListener("click", function (btnClickEvent) {
+        const extensionKey = buttonRef.getAttribute("data-extension-key");
+        if (!extensionKey) {
+          return;
         }
-
-        extensionModalContainerRef.classList.add("opened");
-
-        const extensionModalRef = extensionModalContainerRef.querySelector('.extension-modal');
-        const extensionModalContentRef = extensionModalContainerRef.querySelector('.extension-modal-content');
-        const checkoutWrapperRef = extensionModalContainerRef.querySelector('.checkout-wrapper');
-        const closeIconRef = extensionModalContainerRef.querySelector('.close-icon');
-
-        const isCheckoutDisplayedInline = window.innerWidth >= 1070
-        if (isCheckoutDisplayedInline) {
-          const minContentHeight = extensionModalContentRef.clientHeight;
-          extensionModalContentRef.style.height = '95vh';
-          checkoutWrapperRef.style.height = minContentHeight + 'px';
-        } else {
-          extensionModalContentRef.style.height = '95vh';
-        }
-
-        const onCloseCleanup = function() {
-          // Reset CSS
-          extensionModalContainerRef.classList.remove("opened");
-
-          if (isCheckoutDisplayedInline) {
-            extensionModalContentRef.style.height = 'auto';
-            checkoutWrapperRef.style.height = 'auto';
-          }
-
-          // Strip hash
-          if (!window.location.hash) {
-            return;
-          }
-          if (window.history.replaceState) {
-            window.history.replaceState(null, null, ' ');
+        const extensionModalContainerRef = document.querySelector(
+          `.extension-modal-container[data-extension-key='${extensionKey}']`,
+        );
+        if (extensionModalContainerRef) {
+          if (history.pushState) {
+            history.pushState(null, null, `#${extensionKey}`);
           } else {
-            window.location.hash = '';
+            location.hash = `#${extensionKey}`;
           }
+
+          extensionModalContainerRef.classList.add("opened");
+
+          const extensionModalRef =
+            extensionModalContainerRef.querySelector(".extension-modal");
+          const extensionModalContentRef =
+            extensionModalContainerRef.querySelector(
+              ".extension-modal-content",
+            );
+          const checkoutWrapperRef =
+            extensionModalContainerRef.querySelector(".checkout-wrapper");
+          const closeIconRef =
+            extensionModalContainerRef.querySelector(".close-icon");
+
+          const isCheckoutDisplayedInline = window.innerWidth >= 1070;
+          if (isCheckoutDisplayedInline) {
+            const minContentHeight = extensionModalContentRef.clientHeight;
+            extensionModalContentRef.style.height = "95vh";
+            checkoutWrapperRef.style.height = minContentHeight + "px";
+          } else {
+            extensionModalContentRef.style.height = "95vh";
+          }
+
+          const onCloseCleanup = function () {
+            // Reset CSS
+            extensionModalContainerRef.classList.remove("opened");
+
+            if (isCheckoutDisplayedInline) {
+              extensionModalContentRef.style.height = "auto";
+              checkoutWrapperRef.style.height = "auto";
+            }
+
+            // Strip hash
+            if (!window.location.hash) {
+              return;
+            }
+            if (window.history.replaceState) {
+              window.history.replaceState(null, null, " ");
+            } else {
+              window.location.hash = "";
+            }
+          };
+
+          const handler = function (event) {
+            if (btnClickEvent === event) {
+              return;
+            }
+            const isClickInside = extensionModalRef.contains(event.target);
+            if (
+              !isClickInside &&
+              extensionModalContainerRef.classList.contains("opened") &&
+              videoModalContainerRef !== event.target &&
+              !videoModalContainerRef.contains(event.target)
+            ) {
+              onCloseCleanup();
+              document.removeEventListener("click", handler);
+            }
+          };
+          btnClickEvent.stopPropagation();
+          document.addEventListener("click", handler);
+
+          closeIconRef.addEventListener(
+            "click",
+            function () {
+              onCloseCleanup();
+            },
+            { once: true },
+          );
         }
-
-        const handler = function (event) {
-          if (btnClickEvent === event) {
-            return;
-          }
-          const isClickInside = extensionModalRef.contains(event.target);
-          if (
-            !isClickInside 
-            && extensionModalContainerRef.classList.contains("opened")
-            && videoModalContainerRef !== event.target
-            && !videoModalContainerRef.contains(event.target)
-          ) {
-            onCloseCleanup();
-            document.removeEventListener("click", handler);
-          }
-        };
-        btnClickEvent.stopPropagation();
-        document.addEventListener("click", handler);
-
-        closeIconRef.addEventListener("click", function() {
-          onCloseCleanup();
-        }, { once: true });
-      }
+      });
     });
-  });
 
   document.querySelectorAll(".btn-watch").forEach(function (buttonRef) {
     buttonRef.addEventListener("click", function (btnClickEvent) {
@@ -271,13 +285,15 @@ window.addEventListener("load", function () {
     });
   });
 
-  function checkIfAutoOpenModal () {
+  function checkIfAutoOpenModal() {
     let hash = window.location.hash;
     if (!hash) {
       return;
     }
     hash = hash.slice(1);
-    const buttonRef = document.querySelector(`.open-extension-trigger[data-extension-key='${hash}']`);
+    const buttonRef = document.querySelector(
+      `.open-extension-trigger[data-extension-key='${hash}']`,
+    );
     if (buttonRef) {
       buttonRef.click();
     }
@@ -329,7 +345,7 @@ function checkLocation() {
       .classList.add("visible");
 
     const timeleftDate = new Date(
-      new Date(2020, 11, 28).getTime() - Date.now()
+      new Date(2020, 11, 28).getTime() - Date.now(),
     );
     document.querySelector(".preorder-discount-wrapper .timeleft").textContent =
       "ONLY " + (timeleftDate.getUTCDate() - 1) + " days left!";
