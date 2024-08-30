@@ -1497,6 +1497,29 @@ body.mobile-nav-open {
   overflow: hidden;
 }
 
+.curriculum-block--all-in-one {
+  background: var(--primary-gradient);
+  color: #fff;
+}
+
+.curriculum-block--all-in-one .extension-heading .extension-label {
+  background: #fff;
+  color: var(--primary-accent-color);
+}
+
+.curriculum-block--all-in-one .extension-heading:hover {
+  background: var(--primary-accent-color)
+}
+
+.curriculum-block--all-in-one .extension-heading .price {
+  color: #fff;
+}
+
+.curriculum-block--all-in-one  .extension-heading h5 svg, .card-header h4 svg {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+
 .curriculum-block .category-items {
   display: none;
 }
@@ -1579,7 +1602,7 @@ body.mobile-nav-open {
   color: #9c9c9c;
   font-size: 1.4rem;
   float: right;
-  margin-right: 15px;
+  margin-right: 12px;
 }
 
 .curriculum-block .category-heading span {
@@ -1743,7 +1766,7 @@ body.mobile-nav-open {
   cursor: pointer;
 }
 
-.extension-heading:not(.extension-heading--coming-soon):hover {
+.extension-heading:not(.extension-heading--coming-soon):not(.extension-heading--all-in-one):hover {
   background-color: #fafafa;
 }
 
@@ -1779,6 +1802,11 @@ body.mobile-nav-open {
   text-decoration: line-through;
   margin-top: 2px;
   font-size: 16px;
+  font-weight: 600;
+}
+
+.extension-heading--all-in-one .original-price {
+  color: rgba(255, 255, 255, 0.55);
 }
 
 .extension-heading--coming-soon {
@@ -2110,6 +2138,9 @@ body.mobile-nav-open {
   .curriculum-block .category-heading,
   .curriculum-block .extension-heading {
     line-height: 24px;
+  }
+  .curriculum-block .original-price {
+    display: none;
   }
   .curriculum-block .category-heading span {
     display: block;
