@@ -705,7 +705,7 @@ body.mobile-nav-open {
 
 .faq-question a {
   color: #e0244e;
-  background: va(--primary-gradient);
+  background: var(--primary-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 600;
