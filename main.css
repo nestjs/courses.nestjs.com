@@ -147,6 +147,10 @@ a:active {
   text-align: left;
 }
 
+.sub-nav-wrapper li {
+  display: block;
+}
+
 .navbar-sticky .sub-nav-wrapper {
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.07);
   background: #fff;
