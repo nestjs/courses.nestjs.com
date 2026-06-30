@@ -7,20 +7,21 @@ import { PrimaryButton } from "../../marketing-ui/components/buttons/primary-but
 import { TransparentButton } from "../../marketing-ui/components/buttons/transparent-button/transparent-button";
 import { CourseVideoModal } from "../../marketing-ui/components/domain/course-curriculum/course-curriculum";
 import { TiltedText } from "../../marketing-ui/components/domain/tilted-text/tilted-text";
+import { ActionBar } from "../../marketing-ui/components/misc/action-bar/action-bar";
 import BarChartSection from "../../marketing-ui/sections/bar-chart/bar-chart-section";
 import { CertificatesSection } from "../../marketing-ui/sections/certificates/certificates-section";
 import CommunitySection from "../../marketing-ui/sections/community/community-section";
 import FaqSection from "../../marketing-ui/sections/faq/faq-section";
 import { Footer } from "../../marketing-ui/sections/footer/footer";
 import {
-    Header,
-    type HeaderProps,
+  Header,
+  type HeaderProps,
 } from "../../marketing-ui/sections/header/header";
 import { ProductsSection } from "../../marketing-ui/sections/products/products-section";
 import { TestimonialsSection } from "../../marketing-ui/sections/testimonials/testimonials-section";
 import {
-    CourseOverviewSection,
-    type CourseOverviewSectionProps,
+  CourseOverviewSection,
+  type CourseOverviewSectionProps,
 } from "./course-overview-section";
 import { ExtensionsSection } from "./extensions-sections";
 
@@ -71,6 +72,16 @@ export function CourseExtensionPage(props: CourseExtensionPageProps) {
         shrink={false}
         fadeInColors={props.fadeInColors}
       />
+      <ActionBar>
+        <span className="font-medium text-white py-1 px-6">
+          Have you already purchased the course?
+        </span>
+        <div className="ml-[40px] p-1">
+          <PrimaryButton href="https://learn.nestjs.com/login" radius="24px">
+            Sign in
+          </PrimaryButton>
+        </div>
+      </ActionBar>
       <CourseOverviewSection
         {...props}
         setSelectedVideoId={setSelectedVideoId}

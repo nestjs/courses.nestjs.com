@@ -16,6 +16,7 @@ import { PrimaryButton } from "../marketing-ui/components/buttons/primary-button
 import { CourseVideoModal } from "../marketing-ui/components/domain/course-curriculum/course-curriculum";
 import { CoursesFan } from "../marketing-ui/components/domain/courses-fan/courses-fan";
 import { TiltedText } from "../marketing-ui/components/domain/tilted-text/tilted-text";
+import { ActionBar } from "../marketing-ui/components/misc/action-bar/action-bar";
 import BarChartSection from "../marketing-ui/sections/bar-chart/bar-chart-section";
 import { CertificatesSection } from "../marketing-ui/sections/certificates/certificates-section";
 import CommunitySection from "../marketing-ui/sections/community/community-section";
@@ -28,7 +29,10 @@ import type { Route } from "./+types/home";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Official Courses | NestJS - Learn to build Node.js apps at any scale" },
+    {
+      title:
+        "Official Courses | NestJS - Learn to build Node.js apps at any scale",
+    },
     {
       name: "description",
       content:
@@ -113,6 +117,16 @@ export default function Courses() {
         actions={null}
         shrink={false}
       />
+      <ActionBar>
+        <span className="font-medium text-white py-1 px-6">
+          Have you already purchased the course?
+        </span>
+        <div className="ml-[40px] p-1">
+          <PrimaryButton href="https://learn.nestjs.com/login" radius="24px">
+            Sign in
+          </PrimaryButton>
+        </div>
+      </ActionBar>
       <CourseOverviewSection
         subheading="Fundamentals course"
         heading="Become an expert with NestJS Fundamentals Course"
