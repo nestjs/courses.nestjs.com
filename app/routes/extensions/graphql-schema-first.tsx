@@ -1,0 +1,88 @@
+import {
+  DatabaseIcon,
+  InfinityIcon,
+  MathOperationsIcon,
+  PlayCircleIcon,
+  PuzzlePieceIcon,
+  ScrollIcon,
+  TreeStructureIcon,
+} from "@phosphor-icons/react";
+import { CourseExtensionPage } from "../../components/courses/extension-page";
+import { GRAPHQL_SCHEMA_FIRST_CURRICULUM } from "../../data/courses/graphql-schema-first";
+import { createMeta } from "../../seo/create-meta";
+import type { Route } from "./+types/architecture-and-advanced-patterns";
+
+export function meta({}: Route.MetaArgs) {
+  return createMeta(
+    "GraphQL Schema-First • Official Courses | NestJS - Learn to build Node.js apps at any scale",
+  );
+}
+
+export default function GraphQLSchemaFirstExtension() {
+  return (
+    <CourseExtensionPage
+      breadcrumb="Fundamentals Course / Extensions"
+      subheading="Course extension"
+      heading="GraphQL Schema First"
+      headerSubheading="Learn everything about the schema-first approach to creating GraphQL APIs with NestJS. Master GraphQL concepts, tips & tricks, and everything you need to your own enterprise-grade GraphQL APIs."
+      description="Learn everything about the schema-first approach to creating GraphQL APIs with NestJS. Master GraphQL concepts, tips & tricks, and everything you need to your own enterprise-grade GraphQL APIs."
+      curriculumText="Prepare for an in-depth guided course & walk-through of GraphQL fundamentals and utilizing the schema-first approaches within NestJS applications from the Creator Kamil Mysliwiec himself, and Mark Pieszak (Core Team Member)."
+      fadeInColors={{
+        desktop: ["#2e104d", "#000", "#200c32"],
+        mobile: ["#2e104d", "#200e31", "#200c32"],
+        css: "#2e104d",
+      }}
+      bulletpoints={[
+        {
+          icon: <PlayCircleIcon weight="fill" size={32} />,
+          title: "21 videos",
+          description:
+            "Featuring 21 videos (with subtitles) and 2 hours of content.",
+        },
+        {
+          title: "Queries, Mutations, and Subscriptions",
+          icon: <MathOperationsIcon weight="fill" size={32} />,
+          description:
+            "Learn how to implement Queries, Mutations, and Subscriptions in your GraphQL APIs.",
+        },
+        {
+          title: "PostgreSQL database integration",
+          icon: <DatabaseIcon weight="fill" size={32} />,
+          description:
+            "Interact with an actual PostgreSQL database and learn how to integrate it with your GraphQL APIs.",
+        },
+        {
+          title: "Data loaders",
+          icon: <TreeStructureIcon weight="fill" size={32} />,
+          description:
+            "Leverage data loaders to optimize your GraphQL APIs and prevent the N+1 problem.",
+        },
+        {
+          title: "Scalars, Interfaces, and Enums",
+          icon: <PuzzlePieceIcon weight="fill" size={32} />,
+          description:
+            "Explore how scalars, interfaces, and enums can be used to improve your GraphQL APIs.",
+        },
+        {
+          title: "Official certification",
+          icon: <ScrollIcon weight="fill" size={32} />,
+          description:
+            "Receive an official certificate of completion to showcase your new skills and boost your career.",
+          footnote: <a href="#certified">See certified developers</a>,
+        },
+        {
+          title: "Lifetime access",
+          icon: <InfinityIcon weight="fill" size={32} />,
+          description:
+            "Get lifetime access to the course content, including all future updates and additions.",
+        },
+      ]}
+      curriculum={GRAPHQL_SCHEMA_FIRST_CURRICULUM}
+      courseTitle="GraphQL Schema-First Extension"
+      coursePrice="$39.99"
+      courseDiscountedPrice="$59.99"
+      courseVideoUrl="https://player.vimeo.com/video/740669317?autoplay=1&muted=1&title=0&byline=0&portrait=0&sidedock=0"
+      purchaseUrl="https://learn.nestjs.com/purchase?product_id=4215018"
+    />
+  );
+}

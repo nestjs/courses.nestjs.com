@@ -31,11 +31,11 @@ Repository contains [courses.nestjs.com](https://courses.nestjs.com) source code
 
 ## Developing
 
-Navigate to `http://localhost:1234/`.
+Navigate to `http://localhost:5173/`.
 
 ```
 $ npm install
-$ npm run start
+$ npm run dev
 ```
 
 ## Build
