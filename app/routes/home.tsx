@@ -25,20 +25,13 @@ import { Footer } from "../marketing-ui/sections/footer/footer";
 import { Header } from "../marketing-ui/sections/header/header";
 import { ProductsSection } from "../marketing-ui/sections/products/products-section";
 import { TestimonialsSection } from "../marketing-ui/sections/testimonials/testimonials-section";
+import { createMeta } from "../seo/create-meta";
 import type { Route } from "./+types/home";
 
 export function meta({}: Route.MetaArgs) {
-  return [
-    {
-      title:
-        "Official Courses | NestJS - Learn to build Node.js apps at any scale",
-    },
-    {
-      name: "description",
-      content:
-        "Official NestJS Courses from the NestJS creator and core team members. Learn everything from fundamentals, to more advanced topics such as authentication, microservices, GraphQL and much more.",
-    },
-  ];
+  return createMeta(
+    "Official Courses | NestJS - Learn to build Node.js apps at any scale",
+  );
 }
 
 const FUNDAMENTALS_ITEMS: Array<{

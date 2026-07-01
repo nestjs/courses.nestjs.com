@@ -9,17 +9,13 @@ import {
 } from "@phosphor-icons/react";
 import { CourseExtensionPage } from "../../components/courses/extension-page";
 import { ADVANCED_CONCEPTS_CURRICULUM } from "../../data/courses/advanced-concepts";
+import { createMeta } from "../../seo/create-meta";
 import type { Route } from "./+types/architecture-and-advanced-patterns";
 
 export function meta({}: Route.MetaArgs) {
-  return [
-    { title: "Advanced Concepts • Official Courses | NestJS - Learn to build Node.js apps at any scale" },
-    {
-      name: "description",
-      content:
-        "Official NestJS Courses from the NestJS creator and core team members. Learn everything from fundamentals, to more advanced topics such as authentication, microservices, GraphQL and much more.",
-    },
-  ];
+  return createMeta(
+    "Advanced Concepts • Official Courses | NestJS - Learn to build Node.js apps at any scale",
+  );
 }
 
 export default function AdvancedConceptsExtension() {

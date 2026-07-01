@@ -8,17 +8,13 @@ import {
 } from "@phosphor-icons/react";
 import { CourseExtensionPage } from "../../components/courses/extension-page";
 import { AUTHENTICATION_AND_AUTHORIZATION_CURRICULUM } from "../../data/courses/authentication-and-authorization";
+import { createMeta } from "../../seo/create-meta";
 import type { Route } from "./+types/architecture-and-advanced-patterns";
 
 export function meta({}: Route.MetaArgs) {
-  return [
-    { title: "Authentication and Authorization • Official Courses | NestJS - Learn to build Node.js apps at any scale" },
-    {
-      name: "description",
-      content:
-        "Official NestJS Courses from the NestJS creator and core team members. Learn everything from fundamentals, to more advanced topics such as authentication, microservices, GraphQL and much more.",
-    },
-  ];
+  return createMeta(
+    "Authentication and Authorization • Official Courses | NestJS - Learn to build Node.js apps at any scale",
+  );
 }
 
 export default function AuthenticationAndAuthorizationExtension() {

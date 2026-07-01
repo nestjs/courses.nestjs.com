@@ -9,17 +9,13 @@ import {
 } from "@phosphor-icons/react";
 import { CourseExtensionPage } from "../../components/courses/extension-page";
 import { ARCHITECTURE_AND_ADVANCED_PATTERNS_CURRICULUM } from "../../data/courses/architecture-and-advanced-patterns";
+import { createMeta } from "../../seo/create-meta";
 import type { Route } from "./+types/architecture-and-advanced-patterns";
 
 export function meta({}: Route.MetaArgs) {
-  return [
-    { title: "Architecture and Advanced Patterns • Official Courses | NestJS - Learn to build Node.js apps at any scale" },
-    {
-      name: "description",
-      content:
-        "Official NestJS Courses from the NestJS creator and core team members. Learn everything from fundamentals, to more advanced topics such as authentication, microservices, GraphQL and much more.",
-    },
-  ];
+  return createMeta(
+    "Architecture and Advanced Patterns • Official Courses | NestJS - Learn to build Node.js apps at any scale",
+  );
 }
 
 export default function ArchitectureAndAdvancedPatternsExtension() {

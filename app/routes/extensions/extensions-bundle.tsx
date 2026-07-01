@@ -8,17 +8,13 @@ import {
   COURSE_EXTENSIONS,
   type CourseExtension,
 } from "../../data/courses/extensions";
+import { createMeta } from "../../seo/create-meta";
 import type { Route } from "./+types/architecture-and-advanced-patterns";
 
 export function meta({}: Route.MetaArgs) {
-  return [
-    { title: "Extensions Bundle • Official Courses | NestJS - Learn to build Node.js apps at any scale" },
-    {
-      name: "description",
-      content:
-        "Official NestJS Courses from the NestJS creator and core team members. Learn everything from fundamentals, to more advanced topics such as authentication, microservices, GraphQL and much more.",
-    },
-  ];
+  return createMeta(
+    "Extensions Bundle • Official Courses | NestJS - Learn to build Node.js apps at any scale",
+  );
 }
 
 const BUNDLE: CourseExtension[] = COURSE_EXTENSIONS.filter(
