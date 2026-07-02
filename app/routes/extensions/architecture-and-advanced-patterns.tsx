@@ -29,45 +29,47 @@ export default function ArchitectureAndAdvancedPatternsExtension() {
       curriculumText="From N-Tier, Hexagonal, Domain Driven-Design, and so much, you'll be ready to build world-class NestJS / Node.js systems in no-time! Prepare for an in-depth guided course & walk-through of real-world Advanced Architectural Concepts & Patterns from the Creator Kamil Mysliwiec himself, and Mark Pieszak (Core Team Member)."
       bulletpoints={[
         {
-          icon: <PlayCircleIcon weight="fill" size={32} />,
+          icon: <PlayCircleIcon weight="fill" size={32} className="shrink-0" />,
           title: "21 videos",
           description:
             "Featuring 21 videos (with subtitles) and over 2 hours of content.",
         },
         {
           title: "Hexagonal / Onion Architectures",
-          icon: <HexagonIcon weight="fill" size={32} />,
+          icon: <HexagonIcon weight="fill" size={32} className="shrink-0" />,
           description:
             "Learn how to implement Hexagonal/Onion Architectures in your NestJS applications.",
         },
         {
           title: "Domain Driven Design (DDD)",
-          icon: <BooksIcon weight="fill" size={32} />,
+          icon: <BooksIcon weight="fill" size={32} className="shrink-0" />,
           description:
             "And how to apply Domain Driven Design (DDD) principles to your NestJS applications.",
         },
         {
           title: "Event-driven architectures",
-          icon: <PipeIcon weight="fill" size={32} />,
+          icon: <PipeIcon weight="fill" size={32} className="shrink-0" />,
           description:
             "Deep dive into Event-driven architectures, setup Event Sourcing, and more.",
         },
         {
           title: "CQRS",
-          icon: <ArrowsSplitIcon weight="fill" size={32} />,
+          icon: (
+            <ArrowsSplitIcon weight="fill" size={32} className="shrink-0" />
+          ),
           description:
             "Command Query Responsibility Segregation (CQRS), why, when, how.",
         },
         {
           title: "Official certification",
-          icon: <ScrollIcon weight="fill" size={32} />,
+          icon: <ScrollIcon weight="fill" size={32} className="shrink-0" />,
           description:
             "Receive an official certificate of completion to showcase your new skills and boost your career.",
           footnote: <a href="#certified">See certified developers</a>,
         },
         {
           title: "Lifetime access",
-          icon: <InfinityIcon weight="fill" size={32} />,
+          icon: <InfinityIcon weight="fill" size={32} className="shrink-0" />,
           description:
             "Get lifetime access to the course content, including all future updates and additions.",
         },

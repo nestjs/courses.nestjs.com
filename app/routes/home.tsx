@@ -42,7 +42,7 @@ const FUNDAMENTALS_ITEMS: Array<{
   videoId?: string;
 }> = [
   {
-    icon: <PlayCircleIcon weight="fill" size={32} />,
+    icon: <PlayCircleIcon weight="fill" size={32} className="shrink-0" />,
     title: "80 videos",
     description:
       "Featuring 80 videos (with subtitles) and over 5 hours of content.",
@@ -51,26 +51,28 @@ const FUNDAMENTALS_ITEMS: Array<{
   },
   {
     title: "From NestJS creator",
-    icon: <IdentificationBadgeIcon weight="fill" size={32} />,
+    icon: (
+      <IdentificationBadgeIcon weight="fill" size={32} className="shrink-0" />
+    ),
     description:
       "The only official course from the Creator Kamil Mysliwiec himself, and Mark Pieszak (Core Team Member).",
   },
   {
     title: "Official certification",
-    icon: <ScrollIcon weight="fill" size={32} />,
+    icon: <ScrollIcon weight="fill" size={32} className="shrink-0" />,
     description:
       "Receive an official certificate of completion to showcase your new skills and boost your career.",
     footnote: <a href="#certified">See certified developers</a>,
   },
   {
     title: "Lifetime access",
-    icon: <InfinityIcon weight="fill" size={32} />,
+    icon: <InfinityIcon weight="fill" size={32} className="shrink-0" />,
     description:
       "Get lifetime access to the course content, including all future updates and additions.",
   },
   {
     title: "Regular content updates",
-    icon: <ArrowsClockwiseIcon weight="fill" size={32} />,
+    icon: <ArrowsClockwiseIcon weight="fill" size={32} className="shrink-0" />,
     description:
       "We regularly update the course content to reflect the latest NestJS features and best practices.",
   },

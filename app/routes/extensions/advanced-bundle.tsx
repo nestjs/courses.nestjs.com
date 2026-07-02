@@ -37,21 +37,23 @@ export default function AdvancedBundleExtension() {
       bundle={BUNDLE}
       bulletpoints={[
         {
-          icon: <SealPercentIcon weight="fill" size={32} />,
+          icon: (
+            <SealPercentIcon weight="fill" size={32} className="shrink-0" />
+          ),
           title: "Save 22% with the bundle",
           description:
             "Get access to both advanced courses in one bundle, saving 22% compared to purchasing them separately.",
         },
         {
           title: "Official certification",
-          icon: <ScrollIcon weight="fill" size={32} />,
+          icon: <ScrollIcon weight="fill" size={32} className="shrink-0" />,
           description:
             "Receive an official certificate of completion to showcase your new skills and boost your career.",
           footnote: <a href="#certified">See certified developers</a>,
         },
         {
           title: "Lifetime access",
-          icon: <InfinityIcon weight="fill" size={32} />,
+          icon: <InfinityIcon weight="fill" size={32} className="shrink-0" />,
           description:
             "Get lifetime access to the course content, including all future updates and additions.",
         },

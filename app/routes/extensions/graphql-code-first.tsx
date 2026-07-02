@@ -34,45 +34,51 @@ export default function GraphQLCodeFirstExtension() {
       }}
       bulletpoints={[
         {
-          icon: <PlayCircleIcon weight="fill" size={32} />,
+          icon: <PlayCircleIcon weight="fill" size={32} className="shrink-0" />,
           title: "23 videos",
           description:
             "Featuring 23 videos (with subtitles) and 2 hours of content.",
         },
         {
           title: "Queries, Mutations, and Subscriptions",
-          icon: <MathOperationsIcon weight="fill" size={32} />,
+          icon: (
+            <MathOperationsIcon weight="fill" size={32} className="shrink-0" />
+          ),
           description:
             "Learn how to implement Queries, Mutations, and Subscriptions in your GraphQL APIs.",
         },
         {
           title: "PostgreSQL database integration",
-          icon: <DatabaseIcon weight="fill" size={32} />,
+          icon: <DatabaseIcon weight="fill" size={32} className="shrink-0" />,
           description:
             "Interact with an actual PostgreSQL database and learn how to integrate it with your GraphQL APIs.",
         },
         {
           title: "Data loaders",
-          icon: <TreeStructureIcon weight="fill" size={32} />,
+          icon: (
+            <TreeStructureIcon weight="fill" size={32} className="shrink-0" />
+          ),
           description:
             "Leverage data loaders to optimize your GraphQL APIs and prevent the N+1 problem.",
         },
         {
           title: "Scalars, Interfaces, and Enums",
-          icon: <PuzzlePieceIcon weight="fill" size={32} />,
+          icon: (
+            <PuzzlePieceIcon weight="fill" size={32} className="shrink-0" />
+          ),
           description:
             "Explore how scalars, interfaces, and enums can be used to improve your GraphQL APIs.",
         },
         {
           title: "Official certification",
-          icon: <ScrollIcon weight="fill" size={32} />,
+          icon: <ScrollIcon weight="fill" size={32} className="shrink-0" />,
           description:
             "Receive an official certificate of completion to showcase your new skills and boost your career.",
           footnote: <a href="#certified">See certified developers</a>,
         },
         {
           title: "Lifetime access",
-          icon: <InfinityIcon weight="fill" size={32} />,
+          icon: <InfinityIcon weight="fill" size={32} className="shrink-0" />,
           description:
             "Get lifetime access to the course content, including all future updates and additions.",
         },

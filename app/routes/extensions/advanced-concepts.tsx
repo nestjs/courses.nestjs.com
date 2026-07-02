@@ -29,45 +29,53 @@ export default function AdvancedConceptsExtension() {
       curriculumText="Gain an even deeper understanding of NestJS and learn how to conquer more complex scenarios in modern Node applications!"
       bulletpoints={[
         {
-          icon: <PlayCircleIcon weight="fill" size={32} />,
+          icon: <PlayCircleIcon weight="fill" size={32} className="shrink-0" />,
           title: "18 videos",
           description:
             "Featuring 18 videos (with subtitles) and over 2 hours of content.",
         },
         {
           title: "Multi-tenancy & i18n",
-          icon: <UsersThreeIcon weight="fill" size={32} />,
+          icon: <UsersThreeIcon weight="fill" size={32} className="shrink-0" />,
           description:
             "Use Durable Providers to implement multi-tenancy and i18n in your NestJS applications.",
         },
         {
           title: "Circuit Breaker",
-          icon: <ShieldCheckIcon weight="fill" size={32} />,
+          icon: (
+            <ShieldCheckIcon weight="fill" size={32} className="shrink-0" />
+          ),
           description:
             "Leverage interceptors to implement the Circuit Breaker pattern, and protect your applications from cascading failures.",
         },
         {
           title: "Multi-process & worker threads",
-          icon: <ArrowsOutLineHorizontalIcon weight="fill" size={32} />,
+          icon: (
+            <ArrowsOutLineHorizontalIcon
+              weight="fill"
+              size={32}
+              className="shrink-0"
+            />
+          ),
           description:
             "Integrate worker threads to benefit from mutliple cores and improve the performance of your NestJS applications.",
         },
         {
           title: "Custom Nest schematics",
-          icon: <BlueprintIcon weight="fill" size={32} />,
+          icon: <BlueprintIcon weight="fill" size={32} className="shrink-0" />,
           description:
             "Learn how to create your own custom Nest schematics to automate repetitive tasks and boost your productivity.",
         },
         {
           title: "Official certification",
-          icon: <ScrollIcon weight="fill" size={32} />,
+          icon: <ScrollIcon weight="fill" size={32} className="shrink-0" />,
           description:
             "Receive an official certificate of completion to showcase your new skills and boost your career.",
           footnote: <a href="#certified">See certified developers</a>,
         },
         {
           title: "Lifetime access",
-          icon: <InfinityIcon weight="fill" size={32} />,
+          icon: <InfinityIcon weight="fill" size={32} className="shrink-0" />,
           description:
             "Get lifetime access to the course content, including all future updates and additions.",
         },

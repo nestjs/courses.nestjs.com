@@ -35,52 +35,54 @@ export default function MicroservicesExtension() {
       }}
       bulletpoints={[
         {
-          icon: <PlayCircleIcon weight="fill" size={32} />,
+          icon: <PlayCircleIcon weight="fill" size={32} className="shrink-0" />,
           title: "20 videos",
           description:
             "Featuring 20 videos (with subtitles) and over 2 hours of content.",
         },
         {
           title: "Monolithic Architecture vs Microservices",
-          icon: <NetworkIcon weight="fill" size={32} />,
+          icon: <NetworkIcon weight="fill" size={32} className="shrink-0" />,
           description:
             "Build a solid understanding of monolithic and microservices architectures and how they differ.",
         },
         {
           title: "Horizontal vs Vertical Scaling",
-          icon: <TrendUpIcon weight="fill" size={32} />,
+          icon: <TrendUpIcon weight="fill" size={32} className="shrink-0" />,
           description:
             "Gain clarity on horizontal vs vertical scaling and when each approach fits.",
         },
         {
           title: "Data consistency",
-          icon: <DatabaseIcon weight="fill" size={32} />,
+          icon: <DatabaseIcon weight="fill" size={32} className="shrink-0" />,
           description:
             "Understand the principles of data consistency and how they’re maintained in systems.",
         },
         {
           title: "Communication brokers",
 
-          icon: <ChatsIcon weight="fill" size={32} />,
+          icon: <ChatsIcon weight="fill" size={32} className="shrink-0" />,
           description:
             "Explore how communication brokers facilitate messaging and decoupling in microservice systems.",
         },
         {
           title: "Outbox / Inbox",
-          icon: <EnvelopeSimpleIcon weight="fill" size={32} />,
+          icon: (
+            <EnvelopeSimpleIcon weight="fill" size={32} className="shrink-0" />
+          ),
           description:
             "Learn how to implement the transactional outbox and inbox patterns to ensure reliable message delivery in microservice systems.",
         },
         {
           title: "Official certification",
-          icon: <ScrollIcon weight="fill" size={32} />,
+          icon: <ScrollIcon weight="fill" size={32} className="shrink-0" />,
           description:
             "Receive an official certificate of completion to showcase your new skills and boost your career.",
           footnote: <a href="#certified">See certified developers</a>,
         },
         {
           title: "Lifetime access",
-          icon: <InfinityIcon weight="fill" size={32} />,
+          icon: <InfinityIcon weight="fill" size={32} className="shrink-0" />,
           description:
             "Get lifetime access to the course content, including all future updates and additions.",
         },

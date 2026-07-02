@@ -33,38 +33,42 @@ export default function AuthenticationAndAuthorizationExtension() {
       }}
       bulletpoints={[
         {
-          icon: <PlayCircleIcon weight="fill" size={32} />,
+          icon: <PlayCircleIcon weight="fill" size={32} className="shrink-0" />,
           title: "19 videos",
           description:
             "Featuring 19 videos (with subtitles) and over 2 hours of content.",
         },
         {
           title: "JWT-based authentication",
-          icon: <FingerprintIcon weight="fill" size={32} />,
+          icon: (
+            <FingerprintIcon weight="fill" size={32} className="shrink-0" />
+          ),
           description:
             "Implement JWT-based authentication to secure your NestJS applications.",
         },
         {
           title: "Server-side sessions",
-          icon: <LockLaminatedIcon weight="fill" size={32} />,
+          icon: (
+            <LockLaminatedIcon weight="fill" size={32} className="shrink-0" />
+          ),
           description: "Learn how to implement server-side sessions.",
         },
         {
           title: "2FA and OAuth2",
-          icon: <HandshakeIcon weight="fill" size={32} />,
+          icon: <HandshakeIcon weight="fill" size={32} className="shrink-0" />,
           description:
             "Implement Two-Factor Authentication (2FA) and OAuth2 (Google) to enhance the security of your applications.",
         },
         {
           title: "Official certification",
-          icon: <ScrollIcon weight="fill" size={32} />,
+          icon: <ScrollIcon weight="fill" size={32} className="shrink-0" />,
           description:
             "Receive an official certificate of completion to showcase your new skills and boost your career.",
           footnote: <a href="#certified">See certified developers</a>,
         },
         {
           title: "Lifetime access",
-          icon: <InfinityIcon weight="fill" size={32} />,
+          icon: <InfinityIcon weight="fill" size={32} className="shrink-0" />,
           description:
             "Get lifetime access to the course content, including all future updates and additions.",
         },

@@ -29,7 +29,11 @@ export function CourseBulletpoints({
             className={`${index !== bulletpoints.length - 1 ? "border-b border-white/10" : ""} w-full py-8 flex gap-8 items-center`}
           >
             {typeof item.icon === "string" ? (
-              <img src={item.icon} alt={`${item.title} Icon`} />
+              <img
+                src={item.icon}
+                alt={`${item.title} Icon`}
+                className="shrink-0"
+              />
             ) : (
               item.icon
             )}
