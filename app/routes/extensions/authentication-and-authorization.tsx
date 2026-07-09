@@ -75,9 +75,9 @@ export default function AuthenticationAndAuthorizationExtension() {
       ]}
       curriculum={AUTHENTICATION_AND_AUTHORIZATION_CURRICULUM}
       courseTitle="Authentication and Authorization Extension"
-      coursePrice="$79.99"
-      courseDiscountedPrice="$105"
-      purchaseUrl="https://learn.nestjs.com/purchase?product_id=5676929"
+      coursePrice="$69.99"
+      courseDiscountedPrice="$99.99"
+      purchaseUrl="https://learn.nestjs.com/purchase?product_id=6794691"
     />
   );
 }

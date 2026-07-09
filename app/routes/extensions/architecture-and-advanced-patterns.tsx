@@ -76,9 +76,9 @@ export default function ArchitectureAndAdvancedPatternsExtension() {
       ]}
       curriculum={ARCHITECTURE_AND_ADVANCED_PATTERNS_CURRICULUM}
       courseTitle="Architecture and Advanced Patterns Extension"
-      coursePrice="$95"
-      courseDiscountedPrice="$125"
-      purchaseUrl="https://learn.nestjs.com/purchase?product_id=5223094"
+      coursePrice="$74"
+      courseDiscountedPrice="$105"
+      purchaseUrl="https://learn.nestjs.com/purchase?product_id=6794694"
     />
   );
 }

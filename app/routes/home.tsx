@@ -132,9 +132,9 @@ export default function Courses() {
         setSelectedVideoId={setSelectedVideoId}
         courseVideoUrl="https://player.vimeo.com/video/433943559?autoplay=1&muted=1&title=0&byline=0&portrait=0&sidedock=0"
         courseTitle="NestJS Fundamentals Course"
-        coursePrice="$129"
-        courseDiscountedPrice="$175"
-        purchaseUrl="https://learn.nestjs.com/purchase?product_id=5676925"
+        coursePrice="$89"
+        courseDiscountedPrice="$129"
+        purchaseUrl="https://learn.nestjs.com/purchase?product_id=6794675"
       />
       <ExtensionsSection />
       <CommunitySection />

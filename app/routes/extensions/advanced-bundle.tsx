@@ -59,9 +59,9 @@ export default function AdvancedBundleExtension() {
         },
       ]}
       courseTitle="Advanced Bundle"
-      coursePrice="$129.99"
-      courseDiscountedPrice="$165.99"
-      purchaseUrl="https://learn.nestjs.com/purchase?product_id=5301050"
+      coursePrice="$99.99"
+      courseDiscountedPrice="$129.99"
+      purchaseUrl="https://learn.nestjs.com/purchase?product_id=6794681"
     />
   );
 }

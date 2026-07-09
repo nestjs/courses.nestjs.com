@@ -85,10 +85,10 @@ export default function GraphQLSchemaFirstExtension() {
       ]}
       curriculum={GRAPHQL_SCHEMA_FIRST_CURRICULUM}
       courseTitle="GraphQL Schema-First Extension"
-      coursePrice="$39.99"
-      courseDiscountedPrice="$59.99"
+      coursePrice="$29.99"
+      courseDiscountedPrice="$49.99"
       courseVideoUrl="https://player.vimeo.com/video/740669317?autoplay=1&muted=1&title=0&byline=0&portrait=0&sidedock=0"
-      purchaseUrl="https://learn.nestjs.com/purchase?product_id=4215018"
+      purchaseUrl="https://learn.nestjs.com/purchase?product_id=6794689"
     />
   );
 }

@@ -67,9 +67,9 @@ export default function AllInOneBundleExtension() {
         },
       ]}
       courseTitle="All-in-One Bundle"
-      coursePrice="$349.00"
-      courseDiscountedPrice="$495.00"
-      purchaseUrl="https://learn.nestjs.com/purchase?product_id=5772222"
+      coursePrice="$269.99"
+      courseDiscountedPrice="$384.99"
+      purchaseUrl="https://learn.nestjs.com/purchase?product_id=6794687"
     />
   );
 }

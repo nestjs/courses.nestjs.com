@@ -82,9 +82,9 @@ export default function AdvancedConceptsExtension() {
       ]}
       curriculum={ADVANCED_CONCEPTS_CURRICULUM}
       courseTitle="Advanced Concepts Extension"
-      coursePrice="$69.99"
-      courseDiscountedPrice="$89"
-      purchaseUrl="https://learn.nestjs.com/purchase?product_id=4808474"
+      coursePrice="$54.99"
+      courseDiscountedPrice="$74.99"
+      purchaseUrl="https://learn.nestjs.com/purchase?product_id=6794680"
     />
   );
 }

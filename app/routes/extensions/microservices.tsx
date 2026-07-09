@@ -89,9 +89,9 @@ export default function MicroservicesExtension() {
       ]}
       curriculum={MICROSERVICES_CURRICULUM}
       courseTitle="Microservices Extension"
-      coursePrice="$59.99"
-      courseDiscountedPrice="$79"
-      purchaseUrl="https://learn.nestjs.com/purchase?product_id=5468604"
+      coursePrice="$49.99"
+      courseDiscountedPrice="$79.99"
+      purchaseUrl="https://learn.nestjs.com/purchase?product_id=6794690"
     />
   );
 }
