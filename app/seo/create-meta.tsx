@@ -35,15 +35,24 @@ export function createMeta(
     },
     {
       property: "og:image",
-      content: "https://courses.nestjs.com/nest-og.png",
+      content: "https://courses.nestjs.com/og-image.jpg",
     },
     {
       property: "og:image:width",
-      content: "820",
+      content: "1200",
     },
     {
       property: "og:image:height",
-      content: "429",
+      content: "630",
+    },
+    {
+      property: "og:image:alt",
+      content:
+        "NestJS Courses - Official NestJS courses: a path of lessons winding upward to a glowing point",
+    },
+    {
+      name: "twitter:image",
+      content: "https://courses.nestjs.com/og-image.jpg",
     },
   ];
 }
