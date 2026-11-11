@@ -85,3 +85,12 @@ body {
 .perspective-500 {
   perspective: 500px;
 }
+
+div[role='dialog']:has(.featured-lesson) {
+  overflow-y: auto;
+}
+
+div:has(> .featured-lesson) {
+  max-width: min(1170px, calc((100dvh - 3rem) * 16 / 9));
+  margin: auto;
+}
